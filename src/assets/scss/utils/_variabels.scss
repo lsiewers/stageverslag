@@ -1,0 +1,37 @@
+@import 'fonts';
+
+// colors
+$color-primary: #2131FF;
+$color-background: #FFF;
+$color-text: #000;
+$color-grey: #A7A9AC;
+
+// opacity
+$light: 0.1;
+
+// font-families
+$font-title: "Arvo";
+$font-bold: "Source Sans Pro Bold";
+$font-light: "Source Sans Pro Light";
+
+// spaces
+$space-sm: 10px;
+$space-md: 20px;
+$space-lg: 40px;
+
+// sizes
+$size-sm: 36px;
+$size-md: 72px;
+$size-lg: 90px;
+
+// font-sizes
+$font-sm: em(12);
+$font-md: em(16);
+$font-lg: em(18);
+
+// title-sizes
+$title-sm: em(24);
+$title-md: em(32);
+$title-lg: em(42);
+$title-xl: em(48);
+$title-xxl: rem(56);

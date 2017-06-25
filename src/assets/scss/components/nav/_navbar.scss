@@ -1,0 +1,70 @@
+.nav-bar {
+    @include size(100vw, 72px);
+    position: fixed;
+    z-index: 9;
+    padding: 0px 72px;
+
+    .background {
+        @include abs();
+        @include size(100%, 100%);
+        background-color: $color-background;
+        z-index: -1;
+    }
+}
+.menu-btn {
+    @include size(72px, 72px);
+    padding: 20px;
+}
+
+.menu-btn:hover .line {
+    &:first-child {
+        transform: translate3d(0, 2px, 0);
+    }
+    &:nth-child(3) {
+        transform: translate3d(0, -2px, 0);
+    }
+}
+
+.menu-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.line {
+    fill:none;
+    stroke:#2131ff;
+    stroke-miterlimit:10;
+    stroke-width: 2px;
+    transition: .1s ease-in-out;
+    transform-origin: center center;
+}
+
+.page-text, .menu-text {
+    display: inline-block;
+    position: absolute;
+    line-height: 72px;
+    font-family: $font-bold;
+    transition: opacity .5s ease-in-out;
+    opacity: 1;
+}
+
+.menu-text {
+    color: white;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.logo {
+    float: right;
+    line-height: 72px;
+    font-family: $font-title;
+    margin-right: 20px;
+    color: black;
+    transition: .5s ease-in-out;
+
+    &.white {
+        color: white;
+    }
+}

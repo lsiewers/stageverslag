@@ -1,0 +1,125 @@
+// animations
+
+.content-show {
+    animation: menuFadeIn .5s forwards 1s ease-in-out;
+}
+
+.menu-show  {
+    pointer-events: all !important;
+
+    .background {
+        animation: bgShow 1s ease-in-out forwards;
+    }
+}
+
+.menu-hide  {
+    pointer-events: none !important;
+
+    .background {
+        animation: bgHide 1s ease-in-out forwards;
+        opacity: 1;
+        pointer-events: none;
+    }
+}
+
+
+.menu-active {
+    .background {
+        animation: navSlideOut .5s forwards .5s ease-in-out;
+    }
+    .line {
+        &:first-child {
+            animation: topToCross .5s .5s forwards ease-in-out;
+        }
+        &:nth-child(2) {
+            animation: middleOut .5s forwards ease-in-out;
+        }
+        &:nth-child(3) {
+            animation: underToCross .5s .5s forwards ease-in-out;
+        }
+    }
+}
+
+.menu-off {
+    .background {
+        animation: navSlideIn .5s forwards ease-in-out;
+    }
+    .line {
+        &:first-child {
+            animation: topToBar .5s ease-in-out;
+            transform: translate3d(0, 0, 0); 
+        }
+        &:nth-child(2) {
+            animation: middleIn .5s forwards ease-in-out;
+            opacity: 0;
+        }
+        &:nth-child(3) {
+            animation: underToBar .5s ease-in-out;
+            transform: translate3d(0, 0, 0); 
+        }
+    }
+    
+}
+
+// hamburger-menu to cross animation
+@keyframes topToCross {
+    0% {transform: translateY(0); stroke: #2131ff;}
+    50% {transform: translateY(8px) rotate(0);  stroke: white;}
+    100% {transform:  translateY(8px) rotate(45deg);  stroke: white;}
+}
+
+@keyframes middleOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes underToCross {
+    0% {transform: translateY(0); stroke: #2131ff;}
+    50% {transform: translateY(-8px) rotate(0);  stroke: white;}
+    100% {transform:  translateY(-8px) rotate(-45deg);  stroke: white;}
+}
+
+// cross to hamburger-menu animation
+@keyframes topToBar { 
+    0% {transform:  translateY(8px) rotate(45deg);  stroke: white;}
+    50% {transform: translateY(8px) rotate(0);  stroke: white;}
+    100% {transform: translateY(0); stroke: #2131ff;}
+}
+
+@keyframes middleIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes underToBar {
+    0% {transform:  translateY(-8px) rotate(-45deg);  stroke: white;}
+    50% {transform: translateY(-8px) rotate(0);  stroke: white;}
+    100% {transform: translateY(0); stroke: #2131ff;}
+}
+
+@keyframes navSlideOut {
+    from {top: 0;}
+    to {top: -72px;}
+}
+
+@keyframes navSlideIn {
+    from {top: -72px;}
+    to {top: 0;}
+}
+
+@keyframes bgShow {
+    0% {transform: scale(1); opacity: 0;}
+    50% {transform: scale(1); opacity: 1;}
+    100% {transform: scale(1.25); opacity: 1;}
+}
+
+@keyframes bgHide {
+    0% {transform: scale(1.25); opacity: 1;}
+    50% {transform: scale(1); opacity: 1;}
+    100% {transform: scale(1); opacity: 0;}
+}
+
+@keyframes menuFadeIn {
+    from {opacity: 0;}
+    to {opacity: 1}
+}

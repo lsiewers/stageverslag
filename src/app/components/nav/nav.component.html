@@ -1,0 +1,41 @@
+<header class="nav-bar" [ngClass]="{'menu-active': menuStatus == 1, 'menu-off': menuStatus == 2}">
+  <div class="background"></div>
+  <a class="menu-btn" (click)="menuToggle()">
+    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18"><g id="Laag_2-2" data-name="Laag 2"><line class="line" y1="1" x2="24" y2="1"/><line class="line" y1="9" x2="24" y2="9"/><line class="line" y1="17" x2="24" y2="17"/></g></svg>
+  </a>
+  <span class="page-text" [ngClass]="{'invisible': menuStatus == 1}">page</span>
+  <span class="menu-text invisible" [ngClass]="{'invisible': menuStatus !== 1}">Menu</span>
+  <h1 class="logo" [ngClass]="{'white': menuStatus == 1}">Stageverslag</h1>
+</header>
+<section class="menu" [ngClass]="{'menu-show': menuStatus == 1, 'menu-hide': menuStatus == 2}">
+  <div class="background"></div>
+  <div class="menu-content" [ngClass]="{'content-show': menuStatus == 1, 'content-hide': menuStatus == 2}">
+    <ul class="nav-list">
+      <li><a (click)="menuToggle()" routerLink="/intro">Intro</a></li>
+      <li><a (click)="menuToggle()" routerLink="/inleiding">Inleiding</a></li>
+      <li><a (click)="menuToggle()">Realisaties</a></li>
+      <ul class="nav-list-sub">
+        <li><a (click)="menuToggle()">Hedon bestelproces</a></li>
+        <li><a (click)="menuToggle()">100-100-100</a></li>
+        <li><a (click)="menuToggle()">BFO 2017</a></li>
+      </ul>
+    </ul>
+    <ul class="nav-list">
+      <li><a (click)="menuToggle()">Concepten</a></li>
+      <ul class="nav-list-sub">
+        <li><a (click)="menuToggle()">Voerdam</a></li>
+        <li><a (click)="menuToggle()">Jij &amp; Overijssel</a></li>
+        <li><a (click)="menuToggle()">Schone Ijsseloevers</a></li>
+      </ul>
+      <li><a (click)="menuToggle()">Conclusie</a></li>
+      <li><a (click)="menuToggle()">Foto's</a></li>
+    </ul>
+    <section class="menu-footer">
+      <p class="copyright-menu">© Copyright 2017, <a class="pf-link" href="//www.siewersdesign.nl" target="_blank">Siewersdesign.</a></p>
+      <a class="pdf-download invisible" [ngClass]="{'invisible': menuStatus !== 1}">
+        Download PDF
+        <img src="../assets/img/icons/pdf-icon.svg"/>
+      </a>
+    </section>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+.grid {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    pointer-events: none;
+    opacity: .2;
+}
+
+.column {
+    height: 100%;
+    border: 1px solid grey;
+    width: 6.5885vw;
+    margin-left: 1.6105vw;
+    float: left;
+}
