@@ -17,7 +17,7 @@ export class ProjectComponent implements OnInit {
     this.route.params.subscribe(a => {
 
       this.projectService.getProject(+a.id).subscribe(b => {
-        this.project = b.find(c => c.name === +a.id);
+        this.project = b.find(c => c.id === +a.id);
       })
     })
   }
