@@ -2,28 +2,28 @@
 	font-family: "Arvo";
 	font-style: normal;
 	font-weight: bold;
-	src: url("assets/fonts/arvo-bold.woff") format("woff"),
-	     url("assets/fonts/arvo-bold.woff2") format("woff2"),
-         url("assets/fonts/arvo-bold.ttf") format("truetype"),
-	     url("assets/fonts/arvo-bold.eot?") format("eot")
+	src: url("/assets/fonts/arvo-bold.woff") format("woff"),
+	     url("/assets/fonts/arvo-bold.woff2") format("woff2"),
+         url("/assets/fonts/arvo-bold.ttf") format("truetype"),
+	     url("/assets/fonts/arvo-bold.eot?") format("eot")
 }
 
 @font-face {
 	font-family: "Source Sans Pro Bold";
 	font-style: normal;
 	font-weight: bold;
-	src: url("assets/fonts/sourcesanspro-bold.woff") format("woff"),
-	     url("assets/fonts/sourcesanspro-bold.woff2") format("woff2"),
-         url("assets/fonts/sourcesanspro-bold.ttf") format("truetype"),
-	     url("assets/fonts/sourcesanspro-bold.eot?") format("eot")
+	src: url("/assets/fonts/sourcesanspro-bold.woff") format("woff"),
+	     url("/assets/fonts/sourcesanspro-bold.woff2") format("woff2"),
+         url("/assets/fonts/sourcesanspro-bold.ttf") format("truetype"),
+	     url("/assets/fonts/sourcesanspro-bold.eot?") format("eot")
 }
 
 @font-face {
 	font-family: "Source Sans Pro Light";
 	font-style: normal;
 	font-weight: light;
-	src: url("assets/fonts/sourcesanspro-light.woff") format("woff"),
-	     url("assets/fonts/sourcesanspro-light.woff2") format("woff2"),
-         url("assets/fonts/sourcesanspro-light.ttf") format("truetype"),
-	     url("assets/fonts/sourcesanspro-light.eot?") format("eot")
+	src: url("/assets/fonts/sourcesanspro-light.woff") format("woff"),
+	     url("/assets/fonts/sourcesanspro-light.woff2") format("woff2"),
+         url("/assets/fonts/sourcesanspro-light.ttf") format("truetype"),
+	     url("/assets/fonts/sourcesanspro-light.eot?") format("eot")
 }
