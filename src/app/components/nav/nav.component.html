@@ -13,7 +13,7 @@
     <ul class="nav-list">
       <li><a (click)="menuToggle()" routerLink="/intro">Intro</a></li>
       <li><a (click)="menuToggle()" routerLink="/inleiding">Inleiding</a></li>
-      <li><a (click)="menuToggle()">Realisaties</a></li>
+      <li><a (click)="menuToggle()" routerLink="/realisaties">Realisaties</a></li>
       <ul class="nav-list-sub">
         <li><a (click)="menuToggle()">Hedon bestelproces</a></li>
         <li><a (click)="menuToggle()">100-100-100</a></li>
@@ -21,7 +21,7 @@
       </ul>
     </ul>
     <ul class="nav-list">
-      <li><a (click)="menuToggle()">Concepten</a></li>
+      <li><a (click)="menuToggle()" routerLink="/concepten">Concepten</a></li>
       <ul class="nav-list-sub">
         <li><a (click)="menuToggle()">Voerdam</a></li>
         <li><a (click)="menuToggle()">Jij &amp; Overijssel</a></li>
@@ -30,12 +30,12 @@
       <li><a (click)="menuToggle()">Conclusie</a></li>
       <li><a (click)="menuToggle()">Foto's</a></li>
     </ul>
-    <section class="menu-footer">
-      <p class="copyright-menu">© Copyright 2017, <a class="pf-link" href="//www.siewersdesign.nl" target="_blank">Siewersdesign.</a></p>
-      <a class="pdf-download invisible" [ngClass]="{'invisible': menuStatus !== 1}">
-        Download PDF
-        <img src="../assets/img/icons/pdf-icon.svg"/>
-      </a>
-    </section>
   </div>
+  <section class="menu-footer" [ngClass]="{'content-show': menuStatus == 1, 'content-hide': menuStatus == 2}">
+    <p class="copyright-menu">© Copyright 2017, <a class="pf-link" href="//www.siewersdesign.nl" target="_blank">Siewersdesign.</a></p>
+    <a class="pdf-download invisible" [ngClass]="{'invisible': menuStatus !== 1}">
+      Download PDF
+      <img src="../assets/img/icons/pdf-icon.svg"/>
+    </a>
+  </section>
 </section>

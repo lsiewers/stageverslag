@@ -15,7 +15,7 @@ export class ProjectService {
     return this.http.get('../../assets/data/projects.json').map(a => a.json());
   }
 
-  getProject(id: number) {
+  getProject(link: Array<any>) {
     return this.http.get('../../assets/data/projects.json').map(a => a.json());
   }
 

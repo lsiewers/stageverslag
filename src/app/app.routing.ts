@@ -19,7 +19,7 @@ const routes: Routes = [
     path: 'concepten',
     component: ProjectsIntroComponent,
     children: [{
-      path: ':id',
+      path: ':link',
       component: ProjectComponent
     }]
   },
@@ -27,7 +27,7 @@ const routes: Routes = [
     path: 'realisaties',
     component: ProjectsIntroComponent,
     children: [{
-      path: ':id',
+      path: ':link',
       component: ProjectComponent
     }]
   },

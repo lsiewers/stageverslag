@@ -1,11 +1,11 @@
 [
 	{
-		"id": 1,
+		"link": "hedon-bestelproces",
 		"name":"Hedon bestelproces",
 		"description": "lekker projectje"
 	},
 	{
-		"id": 2,
+		"link": "100-100-100",
 		"name":"100-100-100",
 		"description": "nog een lekker projectje"
 	}

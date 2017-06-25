@@ -1,7 +1,6 @@
 
 @import 'utils/all';
 @import 'reset';
-@import 'grid';
 @import 'extends/all';
 
 body {
@@ -11,4 +10,8 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-family: $font-bold;
+}
+
+p {
+    font-family: $font-light !important;
 }

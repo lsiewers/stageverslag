@@ -1,0 +1,18 @@
+
+.project-story {
+    width: 50%;
+    padding: 120px 40px 40px;
+    box-sizing: border-box;
+    display: inline-block;
+
+    h1 {
+        margin-bottom: 10px;
+        font-size: $title-sm;
+    }
+
+    p {
+        line-height: 2;
+        font-size: $font-md;
+        margin-bottom: 60px;
+    }
+}

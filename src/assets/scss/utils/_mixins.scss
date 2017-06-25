@@ -22,7 +22,7 @@
     left: $left
 }
 
-@mixin size($width, $height) {
+@mixin size($width, $height:$width) {
     width: $width;
     height: $height;
     display: inline-block;

@@ -1,6 +1,8 @@
 .wrapper {
-    height: 100%;
-    padding: 20vh 25vw 0;
+    height: auto;
+    width: 40vw;
+    min-width: 320px;
+    @extend %all-center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,13 +10,18 @@
 
 .nav-list {
     li {
-        margin-top: 5vh;
-
+        &:not(:first-child) {
+            margin-top: 5vh;
+        }
         h1 {
             color: black;
             font-family: $font-bold;
             font-size: $title-md;
         }
+    }
+
+    &-sub li:first-child {
+        margin-top: 5vh;
     }
 
     &-sub li h2 {

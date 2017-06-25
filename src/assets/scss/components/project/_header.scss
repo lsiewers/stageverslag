@@ -1,0 +1,19 @@
+.project-header {
+    width: calc(100vw - 144px);
+    height: calc(100vh - 144px);
+    background-color: white;
+    position: fixed;
+    pointer-events: none;
+}
+
+.bg-img {
+    object-fit: cover;
+    width: 100%;
+    height: calc(100vh - 144px);
+}
+
+.project-title {
+    @extend %bg-title;
+    @include abs(50%, null, null, 50%);
+    transform: translate(-50%, -50%);
+}

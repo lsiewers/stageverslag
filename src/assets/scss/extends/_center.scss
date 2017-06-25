@@ -1,0 +1,4 @@
+%all-center {
+    @include abs(50%, null, null, 50%);
+    transform: translate(-50%, -50%);
+}

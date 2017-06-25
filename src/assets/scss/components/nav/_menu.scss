@@ -18,22 +18,36 @@
 
 // menu content
 .menu-content {
-    @include size(100%, 100%);
-    padding: 20vh 25vw 0;
-    opacity: 0;
+    height: auto;
+    width: 40vw;
+    min-width: 320px;
+    @extend %all-center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    opacity: 0;
 }
 
-.nav-list li {
-    margin-top: 5vh;
+.nav-list {
+    li {
+        &:not(:first-child) {
+            margin-top: 5vh;
+        }
+        
+        a {
+            color: white;
+            font-family: $font-bold;
+            font-size: $title-md;
+        }
+    }
 
-    a {
-        color: white;
-        font-family: $font-bold;
-        font-size: $title-md;
-        padding: 20px 10px;
+    &-sub li:first-child {
+        margin-top: 5vh;
+    }
+
+    &-sub li a {
+        font-family: $font-light;
+        font-size: $title-sm;
     }
 }
 .nav-list-sub li a {
@@ -45,6 +59,7 @@
     @include abs(null, null, 0, 0);
     @include size(100vw, 72px);
     padding: 0 72px;
+    opacity: 0;
 }
 
 .copyright-menu {
