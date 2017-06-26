@@ -1,0 +1,28 @@
+
+
+.info {
+    @include abs(null, null, 72px, 0);
+    width: 100%;
+    padding: 0 120px 6vh;
+    display: flex;
+    justify-content: center;
+
+    article {
+        text-align: center;
+        width: 30%;
+
+        &:nth-child(2) {
+            width: 40%;
+        }
+
+        h2 {
+            font-family: $font-light;
+            font-size: $font-sm;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: $font-md;
+        }
+    }
+}

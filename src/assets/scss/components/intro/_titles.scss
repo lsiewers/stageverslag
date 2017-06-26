@@ -1,0 +1,32 @@
+
+.verslag-title {
+    padding-top: 15vh;
+    text-align: center;
+
+    h1 {
+        @extend %bg-title;
+    }
+}
+
+.titles {
+    @include abs(50%, null, null, 50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 20px;
+
+    h2 {
+        font-family: $font-light;
+        font-size: $title-xl;
+        margin-bottom: 40px;
+        color: $color-primary;
+
+        a {
+            text-decoration: underline;
+            color: $color-primary;
+        }
+    }
+
+    h3 {
+        font-size: $font-lg;
+    }
+}

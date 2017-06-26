@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, ActivatedRoute } from '@angular/router';  
+import { Route, ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../../services/project.service';
 import { HostListener} from "@angular/core";
 
@@ -12,7 +12,7 @@ import { HostListener} from "@angular/core";
 
 export class ProjectComponent implements OnInit {
   project: any;
-  
+
   projectScroll : boolean = false;
 
   constructor(private route: ActivatedRoute, private projectService: ProjectService) { }
@@ -21,12 +21,13 @@ export class ProjectComponent implements OnInit {
     this.route.params.subscribe((a:any) => {
 
       this.projectService.getProject(a.link).subscribe(b => {
+        console.log(b.find(c => c.link === a.link), a);
         this.project = b.find(c => c.link === a.link);
-      })
-    })
+      });
+    });
   }
-  
-  
+
+
   @HostListener("window:scroll", [])
   onWindowScroll() {
     this.projectScroll = true;
