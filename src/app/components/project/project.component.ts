@@ -21,7 +21,6 @@ export class ProjectComponent implements OnInit {
     this.route.params.subscribe((a:any) => {
 
       this.projectService.getProject(a.link).subscribe(b => {
-        console.log(b.find(c => c.link === a.link), a);
         this.project = b.find(c => c.link === a.link);
       });
     });
