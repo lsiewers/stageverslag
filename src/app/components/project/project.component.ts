@@ -10,6 +10,7 @@ import { HostListener} from '@angular/core';
   styleUrls: ['./project.component.scss']
 })
 
+
 export class ProjectComponent implements OnInit {
   project: any;
 
