@@ -34,8 +34,8 @@
     </figure>
 </aside>
 <footer>
-    <a class="next-page">
-        Bekijk inhoudsopgave
+    <a class="next-page" [routerLink]="project?.nextLink">
+      Bekijk {{project?.nextName}}
         <span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10.95">
             <defs></defs>
@@ -46,3 +46,5 @@
         </span>
     </a>
 </footer>
+
+<app-footer></app-footer>

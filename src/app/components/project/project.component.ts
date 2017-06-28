@@ -24,16 +24,37 @@ export class ProjectComponent implements OnInit {
       this.projectService.getProject(a.link).subscribe(b => {
         this.project = b.find(c => c.link === a.link);
       });
+
+      // standard settings
+      document.body.scrollTop = 0;
+      this.projectScroll = false;
     });
+<<<<<<< HEAD
   } 
+=======
+
+  }
+>>>>>>> 12a6602f2f9f27691223b7e2f39785a92183e777
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.projectScroll = true;
 
+<<<<<<< HEAD
     // setTimeout(function() {
     //   document.body.style.overflow = 'auto';
     // }, 1600);
     
+=======
+    if (document.body.scrollTop > 0 && !(document.querySelector('.project-header').classList.contains('scrollTrue'))) {
+         document.body.style.overflow = 'hidden';
+    };
+
+    if (document.body.style.overflow === 'hidden') {
+      setTimeout(function() {
+        document.body.style.overflow = 'auto';
+      }, 1600);
+    };
+>>>>>>> 12a6602f2f9f27691223b7e2f39785a92183e777
   }
 }
