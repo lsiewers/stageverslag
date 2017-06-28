@@ -35,7 +35,7 @@ import { ProjectsIntroComponent } from './components/projects-intro/projects-int
   bootstrap: [
     AppComponent
   ]
-})  
+})
 
-export class AppModule { 
+export class AppModule {
 }

@@ -2,12 +2,49 @@
 	{
 		"link": "hedon-bestelproces",
 		"name":"Hedon bestelproces",
-		"description": "lekker projectje"
+		"description": "lekker projectje",
+
+    "nextLink": "/realisaties/100-100-100",
+    "nextName": "100-100-100"
 	},
 	{
 		"link": "100-100-100",
 		"name":"100-100-100",
-		"description": "nog een lekker projectje"
+		"description": "nog een lekker projectje",
+
+    "nextLink": "/realisaties/bfo",
+    "nextName": "Bevrijdingsfestival Overijssel"
+	},
+	{
+		"link": "bfo",
+		"name":"Bevrijdingsfestival Overijssel",
+		"description": "nog een lekker projectje",
+
+    "nextLink": "/concepten",
+    "nextName": "concepten"
+	},
+	{
+		"link": "voerdam",
+		"name":"Voerdam",
+		"description": "nog een lekker projectje",
+
+    "nextLink": "/concepten/jij-en-overijssel",
+    "nextName": "Jij & Overijssel"
+	},
+	{
+		"link": "jij-en-overijssel",
+		"name":"Jij & Overijssel",
+		"description": "nog een lekker projectje",
+
+    "nextLink": "/concepten/schone-ijsseloevers",
+    "nextName": "Schone IJsseloevers"
+	},
+	{
+		"link": "schone-ijsseloevers",
+		"name":"Schone IJsseloevers",
+		"description": "nog een lekker projectje",
+
+    "nextLink": "/conclusie",
+    "nextName": "conclusie"
 	}
-	
 ]

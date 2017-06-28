@@ -13,7 +13,7 @@ import { ProjectsIntroComponent } from './components/projects-intro/projects-int
 
 const routes: Routes = [
   { path: 'intro', component: IntroComponent },
-  { path: 'indleiding', component: ReportIndexComponent },
+  { path: 'inleiding', component: ReportIndexComponent },
   { path: 'project-intro', component: ReportIndexComponent },
   {
     path: 'concepten',
@@ -35,7 +35,7 @@ const routes: Routes = [
     redirectTo: '/intro',
     pathMatch: 'full'
   },
-  { path: '**', component: ReportIndexComponent }
+  { path: '**', component: IntroComponent }
 ];
 
 @NgModule({

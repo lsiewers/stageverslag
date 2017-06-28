@@ -15,20 +15,20 @@
       <li><a (click)="menuToggle()" routerLink="/inleiding">Inleiding</a></li>
       <li><a (click)="menuToggle()" routerLink="/realisaties">Realisaties</a></li>
       <ul class="nav-list-sub">
-        <li><a (click)="menuToggle()">Hedon bestelproces</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/realisaties/hedon-bestelproces'">Hedon bestelproces</a></li>
         <li><a (click)="menuToggle()" [routerLink]="'/realisaties/100-100-100'">100-100-100</a></li>
-        <li><a (click)="menuToggle()">BFO 2017</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/realisaties/bfo'">BFO 2017</a></li>
       </ul>
     </ul>
     <ul class="nav-list">
       <li><a (click)="menuToggle()" routerLink="/concepten">Concepten</a></li>
       <ul class="nav-list-sub">
-        <li><a (click)="menuToggle()">Voerdam</a></li>
-        <li><a (click)="menuToggle()">Jij &amp; Overijssel</a></li>
-        <li><a (click)="menuToggle()">Schone Ijsseloevers</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/concepten/voerdam'">Voerdam</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/concepten/jij-en-overijssel'">Jij &amp; Overijssel</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/concepten/schone-ijsseloevers'">Schone Ijsseloevers</a></li>
       </ul>
-      <li><a (click)="menuToggle()">Conclusie</a></li>
-      <li><a (click)="menuToggle()">Foto's</a></li>
+      <li><a (click)="menuToggle()" routerLink="/conclusie">Conclusie</a></li>
+      <li><a (click)="menuToggle()" routerLink="/fotos">Foto's</a></li>
     </ul>
   </div>
   <section class="menu-footer" [ngClass]="{'content-show': menuStatus == 1, 'content-hide': menuStatus == 2}">

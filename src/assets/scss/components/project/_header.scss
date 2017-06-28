@@ -16,4 +16,6 @@
     @extend %bg-title;
     @include abs(50%, null, null, 50%);
     transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.2;
 }
