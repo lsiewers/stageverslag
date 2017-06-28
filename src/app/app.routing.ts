@@ -6,15 +6,17 @@ import { IntroComponent } from 'app/components/intro/intro.component';
 import { NavComponent } from 'app/components/nav/nav.component';
 import { FooterComponent } from 'app/components/footer/footer.component';
 import { GridComponent } from 'app/components/grid/grid.component';
-import { ReportIndexComponent } from 'app/components/report-index/report-index.component';
 import { ProjectComponent } from 'app/components/project/project.component';
 import { ProjectsIntroComponent } from './components/projects-intro/projects-intro.component';
+import { IntroEndComponent } from './components/intro-end/intro-end.component';
+import { PhotoGalleryComponent } from './components/photo-gallery/photo-gallery.component';
 
 
 const routes: Routes = [
-  { path: 'intro', component: IntroComponent },
-  { path: 'inleiding', component: ReportIndexComponent },
-  { path: 'project-intro', component: ReportIndexComponent },
+  { path: 'home', component: IntroComponent },
+  { path: 'inleiding', component: IntroEndComponent },
+  { path: 'conclusie', component: IntroEndComponent },
+  { path: 'gallerij', component: PhotoGalleryComponent },
   {
     path: 'concepten',
     component: ProjectsIntroComponent,
@@ -32,8 +34,8 @@ const routes: Routes = [
     }]
   },
   { path: '',
-    redirectTo: '/intro',
-    pathMatch: 'full'
+    redirectTo: '/home',
+    pathMatch: 'full',
   },
   { path: '**', component: IntroComponent }
 ];

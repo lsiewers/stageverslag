@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectService } from '../../services/project.service';
+import { AppService } from '../../services/app.service';
 
 @Component({
   selector: 'app-projects-intro',
   templateUrl: './projects-intro.component.html',
   styleUrls: ['./projects-intro.component.scss'],
-  providers: [ProjectService]
+  providers: [AppService]
 })
 export class ProjectsIntroComponent implements OnInit {
   projects: Array<any> = [];
 
-  constructor(private projectService: ProjectService) { }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
-    this.projectService.getProjects().subscribe(a => {
+    this.appService.getGlobalData().subscribe(a => {
       this.projects = a;
     })
   }

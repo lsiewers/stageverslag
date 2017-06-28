@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -10,20 +11,30 @@ export class NavComponent implements OnInit {
   
   menuStatus: number = 0;
 
-  constructor() { 
+  constructor(private router: Router) { 
+
+    // page title
+    router.events.subscribe((val) => {
+      let pageText = document.querySelector(".page-text");
+      let url = this.router.url;
+
+      const realisaties = ['/realisaties', '/realisaties/hedon-bestelproces', '/realisaties/bfo', '/realisaties/100-100-100'];
+      const concepten = ['/concepten', '/concepten/voerdam', '/concepten/jij-en-overijssel', '/concepten/schone-ijsseloevers'];
+          
+      if (url === '/' || url === '/intro') {
+          pageText.innerHTML = 'Intro';
+      } else if(realisaties.indexOf(url) >= 0){
+        pageText.innerHTML = 'Realisaties';
+      } else if (concepten.indexOf(url) >= 0){
+        pageText.innerHTML = 'Concepten';
+      } else {
+        pageText.innerHTML = (url.slice(1).charAt(0).toUpperCase() + url.slice(2));
+      }
+    });
   }
 
   ngOnInit() {
-      let pageText = document.querySelector(".page-text");
-      let url = window.location.pathname;
-      const realisaties = ['/realisaties', '/realisaties/hedon-bestelproces', '/realisaties/bfo', '/realisaties/100-100-100'];
-      const concepten = ['/concepten', '/concepten/voerdam', '/concepten/jij-en-overijssel', '/concepten/schone-ijsseloevers'];
-        
-      if(realisaties.indexOf(url) >= 0){
-        pageText.innerHTML = 'realisaties';
-      } else if (concepten.indexOf(url) >= 0){
-        pageText.innerHTML = 'concepten';
-      }
+      
 
   }
 
@@ -33,6 +44,6 @@ export class NavComponent implements OnInit {
     } else  {
       this.menuStatus = 2;
     }
-  }
+  };
 
 }

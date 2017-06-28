@@ -1,0 +1,58 @@
+[
+	{
+		"link": "/home",
+		"name": "Stageverslag",
+
+		"nextLink": "/intro",
+		"nextName": "/inleiding"
+	},
+	{
+		"link": "hedon-bestelproces",
+		"name":"Hedon bestelproces",
+		"intro": "Hedon is een bekend poppodium in Zwolle. Ze trekken veel bezoekers en er worden vaak online via de website van Hedon tickets besteld. Ondanks dat de website van Hedon door Boerdam is ontworpen en ontwikkeld, is het bestelproces door een speciaal ticket-software bedrijf gemaakt. Dit bedrijf is een ICT-bedrijf die een tijd geleden een bestelproces gebouwd heeft, die het verkoopt aan bedrijven zoals Hedon. Het bestelproces is op het gebied van front-end ontwikkeling niet goed en onoverzichtelijk gemaakt door dit ICT-bedrijf en er is niet zorgvuldig naar het ontwerp gekeken. Het was lastig om het bedrijf zover te krijgen om het een stijldocument toe te laten voegen aan de HTML van Hedon’s bestelproces, maar uiteindelijk zijn ze tocht zover gekregen dat ze het wel wouden doen. Het was aan mij en Fabio de stijl te coderen.",
+		"process": "Het vervangen van het ontwerp in het bestelproces stond al lang op het verlanglijstje van Boerdam. Het ontwerp was al af voordat ik begon met mijn stage en er was ook al gekeken naar hoeveel werk het ongeveer zou kosten. Er werd 13 punten voor geschat wat veel is, maar wat voor 2 mensen in een anderhalf week wel haalbaar zou moeten zijn. Wij mochten de HTML niet aanpassen, omdat het ICT-bedrijf alleen in staat was een CSS-bestand aan de HTML toe te voegen. Dit maakt het ontwikkelen van de stijl een stuk moeilijker en daarom zijn er ook zoveel punten voor gegeven. Hier komt bij dat de code dat het ICT-bedrijf heeft geschreven erg onlogisch en onoverzichtelijk is geschreven en daardoor moesten wij soms erg veel moeite doen om iets wat normaal gesproken erg simpel is voor elkaar te krijgen. Het bestelproces heeft erg veel plekken met verborgen foutmeldingen voor het verzenden van invulformulieren of bestellingen. Ook heb je aparte pagina’s zoals een bestelhistorie die je niet kunt bekijken als je nooit eerder tickets besteld hebt op je account. Bijna iedere dag kwamen ik en Fabio iets tegen waar niemand van wist dat het bestond of wat we niet konden bekijken. Het zag er dus ook nog niet goed uit wanneer je het in beeld kreeg. We hebben hiervoor veel tijd gestoken in het onderzoeken om erachter te komen of er geen dingen over het hoofd gezien zijn. Samen met Ed en Christiaan zijn we door het bestelproces gaan zoeken naar eventuele problemen zodat ik deze kan oplossen voordat het resultaat wordt opgeleverd. In het ontwerp kwamen alleen de hoofdstappen in het bestelproces voor en is er geen rekening gehouden met andere pagina’s die daar buiten vallen, bijvoorbeelden zijn de pagina’s ‘wachtwoord wijzigen’ en ‘mijn account’. Hier heb ik zelf een ontwerp voor gemaakt en deze heb ik daarna gecodeerd. Bij het ontwerpen van de pagina’s heb ik rekening gehouden met; hoe kleuren door de hele site gebruikt worden, waar welk lettertype gebruikt wordt en in welke stijl ze gebruikt worden, hoe elementen in de website worden uitgelijnd en eventueel andere bijzonderheden. De pagina’s blijven zo in een eenduidige stijl. Ik vraag altijd wanneer ik iets ontworpen of ontwikkeld heb aan 1 of meer personen die betrokken zijn in het proces wat zij ervan vinden. Zo krijg ik vaak nog handige feedback en dan kan ook bevestigd worden of het goed genoeg is om op te leveren.  Ik en Fabio hebben hier veel tijd in gestoken, maar ik heb er veel van geleerd en we hebben dan ook echt iets moois gemaakt. Iedereen die nu tickets besteld op Hedon hoeft niet meer door een bestelproces zonder stijl, maar door mooi bestelproces die veel gebruiksvriendelijker is en er gewoon fijner uitziet.",
+		
+		"nextLink": "/realisaties/100-100-100",
+		"nextName": "100-100-100"
+	},
+	{
+		"link": "100-100-100",
+		"name":"100-100-100",
+		"description": "nog een lekker projectje",
+
+		"nextLink": "/realisaties/bfo",
+		"nextName": "Bevrijdingsfestival Overijssel"
+	},
+	{
+		"link": "bfo",
+		"name":"Bevrijdingsfestival Overijssel",
+		"description": "lekker projectje",
+
+		"nextLink": "/concepten",
+		"nextName": "concepten"
+	},
+	{
+		"link": "voerdam",
+		"name":"Voerdam",
+		"description": "nog een lekker projectje",
+
+		"nextLink": "/concepten/jij-en-overijssel",
+		"nextName": "Jij & Overijssel"
+	},
+	{
+		"link": "jij-en-overijssel",
+		"name":"Jij & Overijssel",
+		"description": "lekker projectje",
+
+		"nextLink": "/concepten/schone-ijsseloevers",
+		"nextName": "Schone IJsseloevers"
+	},
+	{
+		"link": "schone-ijsseloevers",
+		"name":"Schone IJsseloevers",
+		"description": "nog een lekker projectje",
+
+		"nextLink": "/conclusie",
+		"nextName": "conclusie"
+	}
+]

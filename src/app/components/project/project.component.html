@@ -1,7 +1,7 @@
 
 <header class="project-header" [ngClass]="{'scrollTrue': projectScroll == true}">
     <img class="bg-img" alt="project-foto">
-    <h1 class="project-title">{{project?.name}}</h1>
+    <h1 class="project-title">{{data?.name}}</h1>
 </header>
 <aside class="bar-left">
     <figure class="img-1">
@@ -15,17 +15,10 @@
 </aside>
 <main class="project-story">
     <h1>Inleiding</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec ipsum commodo, dignissim elit vitae, imperdiet justo. Nullam euismod neque quis mi porta, et pharetra sem feugiat. Duis pharetra lacus at ligula iaculis sodales.
-    </p>
+    <p>{{data?.intro}}</p>
 
     <h1>Proces</h1>
-    <p>
-    Donec pretium metus sit amet neque dictum imperdiet vel nec lacus. Fusce vitae ex tincidunt, sagittis nisi sit amet, tincidunt mauris. Donec nec ligula imperdiet, tincidunt massa vitae, eleifend ex. Quisque bibendum nulla est, nec condimentum mauris ultricies a. Curabitur id augue tortor. Morbi vitae ultrices purus, eget ornare lorem. Ut elit eros, congue vel lobortis et, facilisis ac nisi. Etiam elit libero, dignissim elementum ipsum sed, lobortis venenatis orci. Vivamus ac nibh ullamcorper, volutpat lorem vel, feugiat ipsum.
-
-    Morbi nec arcu orci. <br> <br>
-    Mauris vel eros id felis pellentesque iaculis. Nam suscipit interdum risus, vitae luctus est fringilla id. In non magna tristique, ornare libero elementum, auctor neque. Suspendisse potenti. Suspendisse sagittis quam non rhoncus bibendum. Morbi mollis, dui non finibus hendrerit, neque orci aliquam leo, ullamcorper congue augue massa at nibh. Ut a lectus vitae orci lacinia volutpat. Vestibulum ultricies suscipit velit quis laoreet. Vestibulum eu facilisis augue. Fusce mauris eros, tristique sed semper at, sodales at magna. Nullam accumsan et turpis posuere elementum. Donec eu lacinia purus. Nulla facilisi.
-
-    Praesent euismod sit amet felis et bibendum. Cras turpis est, aliquet eu urna sit amet, porttitor dignissim nunc. Etiam hendrerit tellus bibendum arcu aliquam, in sodales erat fringilla. Vestibulum purus dui, rutrum a tempor ac, ornare a massa. Nam sit amet lacus orci. Morbi condimentum lorem ac finibus porttitor. Mauris vulputate eros et urna sodales, quis imperdiet tellus aliquam. Donec consectetur velit felis, eu suscipit purus eleifend eu. In hac habitasse platea dictumst. Proin ut sodales dolor, ac finibus orci. Phasellus eget nibh faucibus, mattis felis sed, finibus elit. Ut sodales scelerisque condimentum. Nam commodo, velit sed fringilla dignissim, ipsum metus tincidunt lorem, egestas luctus est </p>
+    <p>{{data?.process}}</p>
 </main>
 <aside class="bar-right">
     <figure class="img-1">
@@ -33,18 +26,5 @@
         <figcaption></figcaption>
     </figure>
 </aside>
-<footer>
-    <a class="next-page" [routerLink]="project?.nextLink">
-      Bekijk {{project?.nextName}}
-        <span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10.95">
-            <defs></defs>
-            <g id="Laag_2" data-name="Laag 2">
-                <polygon class="arrow" points="0.51 0 0 0.51 4.97 5.47 0 10.43 0.51 10.95 6 5.47 0.51 0"/>
-            </g>
-            </svg>
-        </span>
-    </a>
-</footer>
 
 <app-footer></app-footer>
