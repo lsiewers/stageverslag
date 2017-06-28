@@ -8,6 +8,26 @@
 		"link": "100-100-100",
 		"name":"100-100-100",
 		"description": "nog een lekker projectje"
+	},
+	{
+		"link": "bfo",
+		"name":"Bevrijdingsfestival Overijssel",
+		"description": "lekker projectje"
+	},
+	{
+		"link": "voerdam",
+		"name":"Voerdam",
+		"description": "nog een lekker projectje"
+	},
+	{
+		"link": "jij-en-overijssel",
+		"name":"Jij & Overijssel",
+		"description": "lekker projectje"
+	},
+	{
+		"link": "schone-ijsseloevers",
+		"name":"Schone IJsseloevers",
+		"description": "nog een lekker projectje"
 	}
 	
 ]

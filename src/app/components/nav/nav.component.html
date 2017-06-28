@@ -3,7 +3,7 @@
   <a class="menu-btn" (click)="menuToggle()">
     <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18"><g id="Laag_2-2" data-name="Laag 2"><line class="line" y1="1" x2="24" y2="1"/><line class="line" y1="9" x2="24" y2="9"/><line class="line" y1="17" x2="24" y2="17"/></g></svg>
   </a>
-  <span class="page-text" [ngClass]="{'invisible': menuStatus == 1}">page</span>
+  <span class="page-text" [ngClass]="{'invisible': menuStatus == 1}">{{project?.link}}</span>
   <span class="menu-text invisible" [ngClass]="{'invisible': menuStatus !== 1}">Menu</span>
   <h1 class="logo" [ngClass]="{'white': menuStatus == 1}">Stageverslag</h1>
 </header>
@@ -15,17 +15,17 @@
       <li><a (click)="menuToggle()" routerLink="/inleiding">Inleiding</a></li>
       <li><a (click)="menuToggle()" routerLink="/realisaties">Realisaties</a></li>
       <ul class="nav-list-sub">
-        <li><a (click)="menuToggle()">Hedon bestelproces</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/realisaties/hedon-bestelproces'">Hedon bestelproces</a></li>
         <li><a (click)="menuToggle()" [routerLink]="'/realisaties/100-100-100'">100-100-100</a></li>
-        <li><a (click)="menuToggle()">BFO 2017</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/realisaties/bfo'">BFO 2017</a></li>
       </ul>
     </ul>
     <ul class="nav-list">
       <li><a (click)="menuToggle()" routerLink="/concepten">Concepten</a></li>
       <ul class="nav-list-sub">
-        <li><a (click)="menuToggle()">Voerdam</a></li>
-        <li><a (click)="menuToggle()">Jij &amp; Overijssel</a></li>
-        <li><a (click)="menuToggle()">Schone Ijsseloevers</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/concepten/voerdam'">Voerdam</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/concepten/jij-en-overijssel'">Jij &amp; Overijssel</a></li>
+        <li><a (click)="menuToggle()" [routerLink]="'/concepten/schone-ijsseloevers'">Schone Ijsseloevers</a></li>
       </ul>
       <li><a (click)="menuToggle()">Conclusie</a></li>
       <li><a (click)="menuToggle()">Foto's</a></li>

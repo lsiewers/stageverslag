@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Route, ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../../services/project.service';
 import { HostListener} from '@angular/core';
-
+import {} from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -25,12 +25,15 @@ export class ProjectComponent implements OnInit {
         this.project = b.find(c => c.link === a.link);
       });
     });
-  }
-
+  } 
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.projectScroll = true;
+
+    // setTimeout(function() {
+    //   document.body.style.overflow = 'auto';
+    // }, 1600);
+    
   }
 }
-

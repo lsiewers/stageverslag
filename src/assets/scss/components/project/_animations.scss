@@ -1,12 +1,12 @@
 .scrollTrue {
-    animation: toTopBar 2s ease-in-out forwards;
+    animation: toTopBar 1.6s ease-in-out forwards;
     .bg-img {
         opacity: 1;
-        animation: fadeOut  2s ease-in-out forwards
+        animation: fadeOut  1.6s ease-in-out forwards
     }
 
     .project-title {
-        animation: toTopLeft 2s ease-in-out forwards;
+        animation: toTopLeft 1.6s ease-in-out forwards;
         padding: 4px 0 0 20px
     }
 }

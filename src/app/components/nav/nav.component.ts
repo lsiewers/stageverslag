@@ -14,6 +14,17 @@ export class NavComponent implements OnInit {
   }
 
   ngOnInit() {
+      let pageText = document.querySelector(".page-text");
+      let url = window.location.pathname;
+      const realisaties = ['/realisaties', '/realisaties/hedon-bestelproces', '/realisaties/bfo', '/realisaties/100-100-100'];
+      const concepten = ['/concepten', '/concepten/voerdam', '/concepten/jij-en-overijssel', '/concepten/schone-ijsseloevers'];
+        
+      if(realisaties.indexOf(url) >= 0){
+        pageText.innerHTML = 'realisaties';
+      } else if (concepten.indexOf(url) >= 0){
+        pageText.innerHTML = 'concepten';
+      }
+
   }
 
   menuToggle () {
