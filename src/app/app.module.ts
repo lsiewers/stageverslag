@@ -14,6 +14,7 @@ import { ProjectComponent } from 'app/components/project/project.component';
 import { ProjectsIntroComponent } from './components/projects-intro/projects-intro.component';
 import { IntroEndComponent } from './components/intro-end/intro-end.component';
 import { PhotoGalleryComponent } from './components/photo-gallery/photo-gallery.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PhotoGalleryComponent } from './components/photo-gallery/photo-gallery.
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule
   ],
   bootstrap: [
     AppComponent

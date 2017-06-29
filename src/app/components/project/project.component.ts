@@ -12,6 +12,7 @@ import { HostListener} from '@angular/core';
 
 export class ProjectComponent implements OnInit {
   data: any;
+  nextLink: any;
 
   projectScroll: boolean = false;
 
@@ -22,14 +23,17 @@ export class ProjectComponent implements OnInit {
 
       this.appService.getData(a.link).subscribe(b => {
         this.data = b.find(c => c.link === a.link);
-        console.log(this.data);
+        this.nextLink = {
+          url: this.data.nextLink,
+          name: this.data.nextName
+        };
       });
 
       // standard settings
       document.body.scrollTop = 0;
       this.projectScroll = false;
     });
-  } 
+  }
 
 
   @HostListener('window:scroll', [])
@@ -39,7 +43,7 @@ export class ProjectComponent implements OnInit {
     // setTimeout(function() {
     //   document.body.style.overflow = 'auto';
     // }, 1600);
-    
+
     if (document.body.scrollTop > 0 && !(document.querySelector('.project-header').classList.contains('scrollTrue'))) {
          document.body.style.overflow = 'hidden';
     };

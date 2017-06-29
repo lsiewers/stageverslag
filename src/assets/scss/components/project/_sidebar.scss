@@ -1,7 +1,9 @@
 .bar-left, .bar-right {
     width: 25%;
-    height: auto;
-    display: inline-block;
+    -webkit-box-flex: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 
     img {
         background-color: $color-grey;
@@ -15,17 +17,9 @@
 .bar-left {
     float: left;
     padding-right: 20px;
-
-    img {
-        margin-top: 100%;
-    }
 }
 
 .bar-right {
     float: right;
     padding-left: 20px;
-
-    img {
-        margin-top: 200%;
-    }
 }

@@ -14,8 +14,8 @@ import { PhotoGalleryComponent } from './components/photo-gallery/photo-gallery.
 
 const routes: Routes = [
   { path: 'home', component: IntroComponent },
-  { path: 'inleiding', component: IntroEndComponent },
-  { path: 'conclusie', component: IntroEndComponent },
+  { path: 'inleiding', component: IntroEndComponent, data: {type: 'inleiding'} },
+  { path: 'conclusie', component: IntroEndComponent, data: {type: 'conclusie'} },
   { path: 'gallerij', component: PhotoGalleryComponent },
   {
     path: 'concepten',

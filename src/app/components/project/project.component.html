@@ -3,28 +3,29 @@
     <img class="bg-img" alt="project-foto">
     <h1 class="project-title">{{data?.name}}</h1>
 </header>
-<aside class="bar-left">
-    <figure class="img-1">
-        <img src="" alt="">
-        <figcaption></figcaption>
-    </figure>
-    <figure class="img-2">
-        <img src="" alt="">
-        <figcaption></figcaption>
-    </figure>
-</aside>
-<main class="project-story">
-    <h1>Inleiding</h1>
-    <p>{{data?.intro}}</p>
+<div class="wrapper">
+  <aside class="bar-left">
+      <figure class="img-1">
+          <img src="" alt="">
+          <figcaption></figcaption>
+      </figure>
+      <figure class="img-2">
+          <img src="" alt="">
+          <figcaption></figcaption>
+      </figure>
+  </aside>
+  <main class="project-story">
+      <h1>Inleiding</h1>
+      <p>{{data?.intro}}</p>
 
-    <h1>Proces</h1>
-    <p>{{data?.process}}</p>
-</main>
-<aside class="bar-right">
-    <figure class="img-1">
-        <img src="" alt="">
-        <figcaption></figcaption>
-    </figure>
-</aside>
-
-<app-footer></app-footer>
+      <h1>Proces</h1>
+      <p>{{data?.process}}</p>
+  </main>
+  <aside class="bar-right">
+      <figure class="img-1">
+          <img src="" alt="">
+          <figcaption></figcaption>
+      </figure>
+  </aside>
+</div>
+<app-footer [nextLink]="nextLink"></app-footer>

@@ -1,5 +1,11 @@
-<p>
-  intro-end works!
-</p>
+<div [ngSwitch]="contentType">
+  <p *ngSwitchCase="'inleiding'">
+    Inleiding!
+  </p>
+  <p *ngSwitchCase="'conclusie'">
+    Conclusie!
+  </p>
+  <p *ngSwitchDefault></p>
+  </div>
 
-<app-footer></app-footer>
+<app-footer [nextLink]="{url: '/home', name: 'Te gek'}"></app-footer>

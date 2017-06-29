@@ -1,8 +1,8 @@
 <footer>
   <div class="background"></div>
   <p class="copyright">© Copyright 2017, <a class="pf-link" href="//www.siewersdesign.nl" target="_blank">Siewersdesign.</a></p>
-  <a class="next-page">
-    Bekijk {{data?.nextName}}
+  <a class="next-page" *ngIf="nextLink" [routerLink]="nextLink.url">
+    Bekijk {{nextLink?.name}}
     <span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10.95">
         <defs></defs>

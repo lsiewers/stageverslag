@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Route, ActivatedRoute } from '@angular/router';
 import { AppService } from '../../services/app.service';
 
@@ -9,6 +9,7 @@ import { AppService } from '../../services/app.service';
   providers: [AppService]
 })
 export class FooterComponent implements OnInit {
+  @Input() nextLink: any;
   projects: Array<any> = [];
   project: any;
 
