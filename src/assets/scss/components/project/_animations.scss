@@ -1,7 +1,6 @@
 .scrollTrue {
     animation: toTopBar 1.6s ease-in-out forwards;
     .bg-img {
-        opacity: 1;
         animation: fadeOut  1.6s ease-in-out forwards
     }
 
@@ -27,6 +26,6 @@
 }
 
 @keyframes fadeOut {
-    from {opacity: 1;}
+    from {opacity: .6;}
     to {opacity: 0;}
 }

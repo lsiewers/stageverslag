@@ -1,15 +1,11 @@
 
 <header class="project-header" [ngClass]="{'scrollTrue': projectScroll == true}">
-    <img class="bg-img" alt="project-foto">
+    <img class="bg-img" *ngIf="headerImg" [src]="data.headerImg" alt="project-foto">
     <h1 class="project-title">{{data?.name}}</h1>
 </header>
 <div class="wrapper">
   <aside class="bar-left">
-      <figure class="img-1">
-          <img src="" alt="">
-          <figcaption></figcaption>
-      </figure>
-      <figure class="img-2">
+      <figure class="img">
           <img src="" alt="">
           <figcaption></figcaption>
       </figure>

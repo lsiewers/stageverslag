@@ -13,6 +13,7 @@ import { HostListener} from '@angular/core';
 export class ProjectComponent implements OnInit {
   data: any;
   nextLink: any;
+  headerImg: any;
 
   projectScroll: boolean = false;
 
@@ -26,6 +27,9 @@ export class ProjectComponent implements OnInit {
         this.nextLink = {
           url: this.data.nextLink,
           name: this.data.nextName
+        };
+        this.headerImg = {
+          url: this.data.headerImg
         };
       });
 
