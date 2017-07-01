@@ -44,10 +44,6 @@ export class ProjectComponent implements OnInit {
   onWindowScroll() {
     this.projectScroll = true;
 
-    // setTimeout(function() {
-    //   document.body.style.overflow = 'auto';
-    // }, 1600);
-
     if (document.body.scrollTop > 0 && !(document.querySelector('.project-header').classList.contains('scrollTrue'))) {
          document.body.style.overflow = 'hidden';
     };
