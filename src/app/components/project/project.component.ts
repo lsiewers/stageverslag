@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, ActivatedRoute } from '@angular/router';
+import { Route, ActivatedRoute, Router } from '@angular/router';
 import { AppService } from '../../services/app.service';
 import { HostListener} from '@angular/core';
 
@@ -11,13 +11,20 @@ import { HostListener} from '@angular/core';
 
 
 export class ProjectComponent implements OnInit {
-  data: any;
-  nextLink: any;
-  headerImg: any;
+  private data: any;
+  public nextLink: any;
+  private headerImg: any;
+  private imgLeft: any;
+  private projectScroll = false;
 
-  projectScroll: boolean = false;
+  constructor(private route: ActivatedRoute, private router: Router, private appService: AppService) {
 
-  constructor(private route: ActivatedRoute, private appService: AppService) { }
+    this.router.events.subscribe((val) => {
+      // standard settings
+      document.body.scrollTop = 0;
+      this.projectScroll = false;
+    });
+  }
 
   ngOnInit() {
     this.route.params.subscribe((a: any) => {
@@ -31,11 +38,10 @@ export class ProjectComponent implements OnInit {
         this.headerImg = {
           url: this.data.headerImg
         };
+        this.imgLeft = {
+          img: this.data.imgLeft
+        };
       });
-
-      // standard settings
-      document.body.scrollTop = 0;
-      this.projectScroll = false;
     });
   }
 
@@ -44,7 +50,7 @@ export class ProjectComponent implements OnInit {
   onWindowScroll() {
     this.projectScroll = true;
 
-    if (document.body.scrollTop > 0 && !(document.querySelector('.project-header').classList.contains('scrollTrue'))) {
+     if (document.body.scrollTop > 0 && !(document.querySelector('.project-header').classList.contains('scrollTrue'))) {
          document.body.style.overflow = 'hidden';
     };
 

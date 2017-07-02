@@ -8,9 +8,7 @@
 }
 
 .bg-img {
-    object-fit: cover;
-    width: 100%;
-    height: calc(100vh - 144px);
+    @extend %bg-img;
     opacity: .6;
 }
 

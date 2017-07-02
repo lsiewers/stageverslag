@@ -15,18 +15,19 @@ export class IntroEndComponent implements OnInit {
   ngOnInit() {
     this.route.data.subscribe((a: any) => {
       this.contentType = a.type;
+      console.log(this.contentType);
 
       const url = this.router.url;
-      if(url === '/inleiding') {
+      if (url === '/inleiding') {
         this.nextLink = {
           url: '/realisaties',
           name: 'realisaties'
-        }
+        };
       } else if (url === '/conclusie') {
         this.nextLink = {
           url: '/gallerij',
           name: 'gallerij'
-        }
+        };
       }
     });
   }

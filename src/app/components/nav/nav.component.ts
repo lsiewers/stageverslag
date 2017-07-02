@@ -19,7 +19,7 @@ export class NavComponent implements OnInit {
       const realisaties = ['/realisaties', '/realisaties/hedon-bestelproces', '/realisaties/bfo', '/realisaties/100-100-100'];
       const concepten = ['/concepten', '/concepten/voerdam', '/concepten/jij-en-overijssel', '/concepten/schone-ijsseloevers'];
       if (url === '/' || url === '/intro') {
-          pageText.innerHTML = 'Intro';
+        pageText.innerHTML = 'Intro';
       } else if (realisaties.indexOf(url) >= 0) {
         pageText.innerHTML = 'Realisaties';
       } else if (concepten.indexOf(url) >= 0) {

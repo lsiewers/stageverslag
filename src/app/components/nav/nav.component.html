@@ -7,9 +7,9 @@
   <span class="menu-text invisible" [ngClass]="{'invisible': menuStatus !== 1}">Menu</span>
   <h1 class="logo" [ngClass]="{'white': menuStatus == 1}">Stageverslag</h1>
 </header>
-<section class="menu" [ngClass]="{'menu-show': menuStatus == 1, 'menu-hide': menuStatus == 2}">
+<section class="menu" [ngClass]="{'menu-show': menuStatus === 1, 'menu-hide': menuStatus === 2}">
   <div class="background"></div>
-  <div class="menu-content" [ngClass]="{'content-show': menuStatus == 1, 'content-hide': menuStatus == 2}">
+  <div class="menu-content" [ngClass]="{'content-show': menuStatus === 1, 'content-hide': menuStatus === 2}">
     <ul class="nav-list">
       <li><a (click)="menuToggle()" routerLink="/home">Home</a></li>
       <li><a (click)="menuToggle()" routerLink="/inleiding">Inleiding</a></li>
@@ -31,7 +31,7 @@
       <li><a (click)="menuToggle()" routerLink="/gallerij">Gallerij</a></li>
     </ul>
   </div>
-  <section class="menu-footer" [ngClass]="{'content-show': menuStatus == 1, 'content-hide': menuStatus == 2}">
+  <section class="menu-footer" [ngClass]="{'content-show': menuStatus === 1, 'content-hide': menuStatus === 2}">
     <p class="copyright-menu">© Copyright 2017, <a class="pf-link" href="//www.siewersdesign.nl" target="_blank">Siewersdesign.</a></p>
     <a class="pdf-download invisible" [ngClass]="{'invisible': menuStatus !== 1}">
       Download PDF

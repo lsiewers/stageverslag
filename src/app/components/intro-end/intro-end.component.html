@@ -1,11 +1,10 @@
 <div [ngSwitch]="contentType">
-  <p *ngSwitchCase="'inleiding'">
+  <h1 *ngSwitchCase="'inleiding'">
     Inleiding!
-  </p>
-  <p *ngSwitchCase="'conclusie'">
+  </h1>
+  <h1 *ngSwitchCase="'conclusie'">
     Conclusie!
-  </p>
-  <p *ngSwitchDefault></p>
-  </div>
+  </h1>
+</div>
 
 <app-footer [nextLink]="nextLink"></app-footer>

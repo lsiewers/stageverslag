@@ -9,45 +9,42 @@ import { Router, ActivatedRoute } from '@angular/router';
   providers: [AppService]
 })
 export class ProjectsIntroComponent implements OnInit {
-  projects: Array<any> = [];
-  nextLink: any;
-  data: any;
-  notVisible = false;
+  private projects: Array<any> = [];
+  private nextLink: any;
+  private data: any;
+  private notVisible = false;
+  private content: string;
 
   constructor(private route: ActivatedRoute, private router: Router, private appService: AppService) {
 
   }
 
   ngOnInit() {
-    this.appService.getGlobalData().subscribe(a => {
-      this.projects = a;
-      console.log(a);
-    });
     this.route.data.subscribe((a: any) => {
-
       const url = this.router.url;
       if (url === '/realisaties') {
+        this.content = 'realisaties';
         this.nextLink = {
           url: '/realisaties/hedon-bestelproces',
           name: 'Hedon bestelproces'
         };
       } else if (url === '/concepten') {
+        this.content = 'concepten';
         this.nextLink = {
           url: '/concepten/voerdam',
           name: 'Voerdam'
         };
-      }
+      };
     });
-    
+    this.appService.getGlobalData().subscribe(a => {
+      this.projects = a;
+    });
     this.router.events.subscribe((val) => {
 
       const url = this.router.url;
-
-      const checkIfParent = url.split("/").pop();
-      console.log(checkIfParent);
-
-    if (checkIfParent !== 'realisaties' && checkIfParent !== 'concepten') {
-        this.notVisible = true;
+      const checkIfParent = url.split('/').pop();
+      if (checkIfParent !== 'realisaties' && checkIfParent !== 'concepten') {
+          this.notVisible = true;
       }
     });
   }

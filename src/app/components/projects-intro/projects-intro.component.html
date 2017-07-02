@@ -1,3 +1,12 @@
+<div [ngClass]="{'invisible': notVisible === true}" [ngSwitch]="content">
+  <h1 *ngSwitchCase="'realisaties'">
+    Realisaties
+  </h1>
+  <h1 *ngSwitchCase="'concepten'">
+    Concepten
+  </h1>
+  <h1 *ngSwitchDefault></h1>
+  </div>
 <router-outlet></router-outlet>
 
 <app-footer [nextLink]="nextLink" [ngClass]="{'invisible': notVisible === true}"></app-footer>

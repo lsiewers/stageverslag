@@ -1,0 +1,24 @@
+figure {
+    @include size(calc(50% - 40px), 50vh);
+    float: left;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px 20px;
+
+
+    img {
+        max-height: 100%;
+        max-width: 70%;
+        background-color: #EEE;
+        @extend %bg-img;
+        opacity: 0;
+        transition: .2s ease-in-out;
+    }
+
+    figcaption {
+        margin-right: 10px;
+        word-wrap: break-word;
+        color: $color-grey;
+        font-size: $font-sm;
+    }
+}
