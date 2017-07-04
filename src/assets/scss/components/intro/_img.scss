@@ -3,7 +3,14 @@ img {
     transform: translate(-50%, -50%);
     width: calc(100vw - 144px);
     height: calc(100vh - 144px);
-    opacity: .6;
+    opacity: 0;
     object-fit: cover;
     object-position: center center;
+    z-index: -1;
+    animation: fadeIn forwards 1s .4s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: .1;}
 }

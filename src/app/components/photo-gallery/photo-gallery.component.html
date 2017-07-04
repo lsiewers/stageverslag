@@ -1,45 +1,144 @@
+<figure class="lightbox" [ngClass]="{'lightbox-visible': lightBox === true}">
+    <img class="lightbox-img">
+    <a class="close" (click)="lightBoxClose()">sluiten<svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18"><g id="Laag_2-2" data-name="Laag 2"><line class="line" y1="1" x2="24" y2="1"/><line class="line" y1="17" x2="24" y2="17"/></g></svg>
+</a>
+</figure>
 <!-- Bedrijf foto's -->
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/arbeidskamer.jpg" alt="">
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/arbeidskamer.jpg" alt="">
   <figcaption>De arbeidskamer</figcaption>
 </figure>
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/werkplek.jpg" alt="">
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/werkplek.jpg" alt="">
   <figcaption>Mijn werkplek met daarnaast Fabio</figcaption>
 </figure>
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/standup2.jpg" alt="">
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/standup2.jpg" alt="">
   <figcaption>Alle aanwezige projectleiders en mensen van de productie komen bij elkaar tijdens de stand-up</figcaption>
 </figure>
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/standup.jpg" alt="">
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/standup.jpg" alt="">
   <figcaption>Scrummaster Thomas voor het scrumbord tijdens de stand-up</figcaption>
 </figure>
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/review.jpg" alt="">
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/review.jpg" alt="">
   <figcaption>Een presentatie van Joanne tijdens de review</figcaption>
 </figure>
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/refinement.jpg" alt="">
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/refinement.jpg" alt="">
   <figcaption>Backlog items pokeren bij de refinement</figcaption>
 </figure>
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/refinement2.jpg" alt="">
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/refinement2.jpg" alt="">
   <figcaption>Thomas zoekend naar het aantal punten dat hij het item schat</figcaption>
 </figure>
 
 <!-- Hedon foto's -->
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/hedon-header.jpg" alt="">
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/hedon/hedon-header.jpg" alt="">
   <figcaption>Hedon - foto van een optreden</figcaption>
 </figure>
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/hedon-header.jpg" alt="">
-  <figcaption>Hedon - foto van een optreden</figcaption>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/hedon/hedon-homepage.png" alt="">
+  <figcaption>Hedon - een screenshot van de homepage</figcaption>
 </figure>
-<figure>
-  <img [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/hedon-header.jpg" alt="">
-  <figcaption>Hedon - foto van een optreden</figcaption>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/hedon/bp-before.png" alt="">
+  <figcaption>Hedon - het bestelproces voordat de stijl was toegevoegd</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/hedon/bp-after.png" alt="">
+  <figcaption>Hedon - het bestelproces nadat de stijl was toegevoegd</figcaption>
+</figure>
+
+<!-- 100-100-100 foto's -->
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/100-100-100/100-100-100-homepage.png" alt="">
+  <figcaption>100-100-100 - een screenshot van de homepage</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/100-100-100/editie-1.png" alt="">
+  <figcaption>100-100-100 - een screenshot van editie Echt-Susteren</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/100-100-100/editie-2.png" alt="">
+  <figcaption>100-100-100 - een screenshot van editie Vlaardingen</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/100-100-100/editie-3.png" alt="">
+  <figcaption>100-100-100 - een screenshot van editie Bernheze</figcaption>
+</figure>
+
+<!-- bfo foto's -->
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/bfo/bfo-header.jpg" alt="">
+  <figcaption>BFO 2017 - een beeld van het festival op 5 mei 2016</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/bfo/bfo-kickoff.jpg" alt="">
+  <figcaption>BFO 2017 - de leerlingen van Landstede Av-productie wordt gepresenteerd hoe 5 mei ongeveer zal lopen.</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/bfo/bfo-regie.jpg" alt="">
+  <figcaption>BFO 2017 - binnen de regiewagen met op het witte scherm de animatie voor de sponsornamen</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/bfo/bfo-screen.jpg" alt="">
+  <figcaption>BFO 2017 - Blaudzun op het podium en op het scherm met de sponsornamen eroverheen</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/bfo/bfo-artiest.png" alt="">
+  <figcaption>BFO 2017 - artiest Blaudzun in het BFO/Jij &amp; Overijssel template voor Twitter</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/bfo/bfo-template.png" alt="">
+  <figcaption>BFO 2017 - een live-blog post in het template</figcaption>
+</figure>
+
+<!-- voerdam foto's -->
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/voerdam/style-old.jpg" alt="">
+  <figcaption>Voerdam - de 1ste styleguide</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/voerdam/screen-1.jpg" alt="">
+  <figcaption>Voerdam - het ‘kies een restaurant’ scherm van de 2de versie</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/voerdam/screen-2.jpg" alt="">
+  <figcaption>Voerdam - het ‘bestel' scherm van de 2de versie</figcaption>
+</figure>
+
+<!-- JIJ foto's -->
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/jij/jij-header.jpg" alt="">
+  <figcaption>Jij &amp; Overijssel - een poster van het initiatief 'groen, groener, groenst'</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/jij/jij-screen.jpg" alt="">
+  <figcaption>Jij &amp; Overijssel - de huidige homepagina</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/jij/jij-wireframe.jpg" alt="">
+  <figcaption>Jij &amp; Overijssel - de wireframe voor het re-design van de homepagina</figcaption>
+</figure>
+
+<!-- Schone IJsseloevers foto's -->
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/ijssel/homepage.jpg" alt="">
+  <figcaption>Schone IJsseloevers - een screenshot van de homepagina</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/ijssel/concept-first.jpg" alt="">
+  <figcaption>Schone IJsseloevers - het eerste concept van de lifecycle</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/ijssel/steps.jpg" alt="">
+  <figcaption>Schone IJsseloevers - de stappen na het onderzoeken van de lifecycle van het afval dat in het water terecht komt</figcaption>
+</figure>
+<figure class="img-figure">
+  <img class="img-hover" (click)="lightBoxOpen($event)" [ngClass]="{'fade-in': imgLoaded === true}" src="assets/img/ijssel/ijsseloevers.jpg" alt="">
+  <figcaption>Schone IJsseloevers - het uiteindelijke concept van de lifecycle</figcaption>
 </figure>
 
 

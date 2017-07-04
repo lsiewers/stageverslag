@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { Route, ActivatedRoute, Router } from '@angular/router';
 import { AppService } from '../../services/app.service';
 import { HostListener} from '@angular/core';
@@ -10,24 +10,26 @@ import { HostListener} from '@angular/core';
 })
 
 
-export class ProjectComponent implements OnInit {
+export class ProjectComponent implements AfterViewInit {
   private data: any;
   public nextLink: any;
   private headerImg: any;
-  private imgLeft: any;
+  private imgLeft: Array<any>;
+  private imgRight: Array<any>;
   private projectScroll = false;
+  private img: string;
+  private lightBox: boolean = false;
+  private projectLink: any;
 
   constructor(private route: ActivatedRoute, private router: Router, private appService: AppService) {
-
-    this.router.events.subscribe((val) => {
-      // standard settings
-      document.body.scrollTop = 0;
-      this.projectScroll = false;
-    });
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     this.route.params.subscribe((a: any) => {
+      // standard settings
+      window.scrollTo(0, 0);
+      document.body.style.pointerEvents = 'none';
+      this.projectScroll = false;
 
       this.appService.getData(a.link).subscribe(b => {
         this.data = b.find(c => c.link === a.link);
@@ -38,25 +40,40 @@ export class ProjectComponent implements OnInit {
         this.headerImg = {
           url: this.data.headerImg
         };
-        this.imgLeft = {
-          img: this.data.imgLeft
-        };
+        this.imgLeft = this.data.imgLeft;
+        this.imgRight = this.data.imgRight;
+        this.projectLink = this.data.projectLink;
+        console.log(this.data);
       });
     });
   }
 
+  lightBoxOpen(event) {
+    const imgSrc = event.target.src;
+    this.lightBox = true;
+    document.querySelector('.lightbox-img').setAttribute('src', imgSrc);
+    document.body.style.overflow = 'hidden';
+  };
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.projectScroll = true;
+  lightBoxClose() {
+    this.lightBox = false;
+    document.body.style.overflow = 'auto';
+  }
 
-     if (document.body.scrollTop > 0 && !(document.querySelector('.project-header').classList.contains('scrollTrue'))) {
-         document.body.style.overflow = 'hidden';
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll($event) {
+    const docReady = document.readyState === 'complete';
+    const hasClass = document.querySelector('.project-header').classList.contains('scrollTrue');
+
+    if (document.body.scrollTop > 0 && !hasClass && docReady) {
+      document.body.style.overflow = 'hidden';
+      this.projectScroll = true;
     };
 
     if (document.body.style.overflow === 'hidden') {
       setTimeout(function() {
         document.body.style.overflow = 'auto';
+      document.body.style.pointerEvents = 'all';
       }, 1600);
     };
   }

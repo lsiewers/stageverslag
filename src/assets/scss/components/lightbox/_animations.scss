@@ -1,0 +1,21 @@
+.lightbox-visible {
+    visibility: visible !important;
+
+    &:before {
+        animation: slideIn .6s ease-in-out forwards;
+    }
+    
+    .lightbox-img, .close {
+        animation: fadeIn .4s ease-in-out forwards .6s;
+    }
+}
+
+@keyframes slideIn {
+    from {left: -100%; opacity: 0;}
+    to {left: 0%; opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}

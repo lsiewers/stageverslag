@@ -36,11 +36,12 @@ export class ProjectsIntroComponent implements OnInit {
         };
       };
     });
+    
     this.appService.getGlobalData().subscribe(a => {
       this.projects = a;
     });
-    this.router.events.subscribe((val) => {
 
+    this.router.events.subscribe((val) => {
       const url = this.router.url;
       const checkIfParent = url.split('/').pop();
       if (checkIfParent !== 'realisaties' && checkIfParent !== 'concepten') {

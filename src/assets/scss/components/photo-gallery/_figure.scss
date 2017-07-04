@@ -1,9 +1,9 @@
-figure {
+.img-figure {
     @include size(calc(50% - 40px), 50vh);
     float: left;
     display: flex;
     flex-direction: row-reverse;
-    margin: 20px 20px;
+    margin: 40px 20px;
 
 
     img {
@@ -18,7 +18,5 @@ figure {
     figcaption {
         margin-right: 10px;
         word-wrap: break-word;
-        color: $color-grey;
-        font-size: $font-sm;
     }
 }

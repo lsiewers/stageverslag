@@ -8,6 +8,10 @@ body {
     color: black;
 }
 
+.invisible {
+    display: none;
+}
+
 .main-wrapper {
     min-height: 100vh;
     height: auto;
@@ -20,8 +24,13 @@ h1, h2, h3, h4, h5 {
     font-family: $font-bold;
 }
 
-p, figcaption {
+p, figcaption, article {
     font-family: $font-light !important;
     line-height: 1.6;
     letter-spacing: .02em;
+}
+
+figcaption {
+    color: $color-grey;
+    font-size: $font-sm;
 }

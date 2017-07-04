@@ -10,6 +10,7 @@ import { AppService } from '../../services/app.service';
 })
 export class IntroComponent implements OnInit {
   data: any;
+  private imgLoaded: boolean = false;
 
   globalData: Array<any> = [];
 
@@ -25,7 +26,7 @@ export class IntroComponent implements OnInit {
 
     this.appService.getGlobalData().subscribe(a => {
       this.globalData = a;
-    })
+    });
   }
 
 }

@@ -1,0 +1,70 @@
+.lightbox {
+    width: calc(100vw - 144px);
+    height: calc(100vh - 144px);
+    visibility: hidden;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+
+    &:before {
+        content: '';
+        display: block;
+        z-index: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        opacity: 0;
+        left: -100%;
+    }
+
+    &-img {
+        opacity: 0 !important;
+        max-height: calc(100% - 40px);
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .close {
+        display: inline-block;
+        margin: 20px auto;
+        color: $color-primary;
+        position: relative;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        opacity: 0;
+        font-family: $font-light;
+
+        &-icon {
+            @include size(14px, 12px);
+            margin-left: 8px;
+
+            .line {
+                fill:none;
+                stroke:#2131ff;
+                stroke-miterlimit:10;
+                stroke-width: 1.5px;
+            }
+            .line:first-child {
+                transform:  translate(3px ,18px) rotate(-45deg);;
+            }
+
+            .line:last-child {
+                transform: translate(15px, -10.5px) rotate(45deg);
+            }
+        }
+    }
+}
+
+.img-hover {
+    transform: none;
+    transition: .2s ease-in-out;
+    cursor: zoom-in;
+}
+
+.img-hover:hover {
+    transform: scale(1.05);
+}

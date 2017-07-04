@@ -1,0 +1,9 @@
+article {
+    max-width: 40vw;
+    display: block;
+    margin: 20px auto;
+
+    &.first {
+        margin: 40px auto;
+    }
+}

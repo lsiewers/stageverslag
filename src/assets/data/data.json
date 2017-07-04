@@ -4,10 +4,26 @@
 		"name":"Hedon bestelproces",
 		"intro": "Hedon is een bekend poppodium in Zwolle. Ze trekken veel bezoekers en er worden vaak online via de website van Hedon tickets besteld. Ondanks dat de website van Hedon door Boerdam is ontworpen en ontwikkeld, is het bestelproces door een speciaal ticket-software bedrijf gemaakt. Dit bedrijf is een ICT-bedrijf die een tijd geleden een bestelproces gebouwd heeft, die het verkoopt aan bedrijven zoals Hedon. Het bestelproces is op het gebied van front-end ontwikkeling niet goed en onoverzichtelijk gemaakt door dit ICT-bedrijf en er is niet zorgvuldig naar het ontwerp gekeken. Het was lastig om het bedrijf zover te krijgen om het een stijldocument toe te laten voegen aan de HTML van Hedon’s bestelproces, maar uiteindelijk zijn ze tocht zover gekregen dat ze het wel wouden doen. Het was aan mij en Fabio de stijl te coderen.",
 		"process": "Het vervangen van het ontwerp in het bestelproces stond al lang op het verlanglijstje van Boerdam. Het ontwerp was al af voordat ik begon met mijn stage en er was ook al gekeken naar hoeveel werk het ongeveer zou kosten. Er werd 13 punten voor geschat wat veel is, maar wat voor 2 mensen in een anderhalf week wel haalbaar zou moeten zijn. Wij mochten de HTML niet aanpassen, omdat het ICT-bedrijf alleen in staat was een CSS-bestand aan de HTML toe te voegen. Dit maakt het ontwikkelen van de stijl een stuk moeilijker en daarom zijn er ook zoveel punten voor gegeven. Hier komt bij dat de code dat het ICT-bedrijf heeft geschreven erg onlogisch en onoverzichtelijk is geschreven en daardoor moesten wij soms erg veel moeite doen om iets wat normaal gesproken erg simpel is voor elkaar te krijgen. Het bestelproces heeft erg veel plekken met verborgen foutmeldingen voor het verzenden van invulformulieren of bestellingen. Ook heb je aparte pagina’s zoals een bestelhistorie die je niet kunt bekijken als je nooit eerder tickets besteld hebt op je account. Bijna iedere dag kwamen ik en Fabio iets tegen waar niemand van wist dat het bestond of wat we niet konden bekijken. Het zag er dus ook nog niet goed uit wanneer je het in beeld kreeg. We hebben hiervoor veel tijd gestoken in het onderzoeken om erachter te komen of er geen dingen over het hoofd gezien zijn. Samen met Ed en Christiaan zijn we door het bestelproces gaan zoeken naar eventuele problemen zodat ik deze kan oplossen voordat het resultaat wordt opgeleverd. In het ontwerp kwamen alleen de hoofdstappen in het bestelproces voor en is er geen rekening gehouden met andere pagina’s die daar buiten vallen, bijvoorbeelden zijn de pagina’s ‘wachtwoord wijzigen’ en ‘mijn account’. Hier heb ik zelf een ontwerp voor gemaakt en deze heb ik daarna gecodeerd. Bij het ontwerpen van de pagina’s heb ik rekening gehouden met; hoe kleuren door de hele site gebruikt worden, waar welk lettertype gebruikt wordt en in welke stijl ze gebruikt worden, hoe elementen in de website worden uitgelijnd en eventueel andere bijzonderheden. De pagina’s blijven zo in een eenduidige stijl. Ik vraag altijd wanneer ik iets ontworpen of ontwikkeld heb aan 1 of meer personen die betrokken zijn in het proces wat zij ervan vinden. Zo krijg ik vaak nog handige feedback en dan kan ook bevestigd worden of het goed genoeg is om op te leveren.  Ik en Fabio hebben hier veel tijd in gestoken, maar ik heb er veel van geleerd en we hebben dan ook echt iets moois gemaakt. Iedereen die nu tickets besteld op Hedon hoeft niet meer door een bestelproces zonder stijl, maar door mooi bestelproces die veel gebruiksvriendelijker is en er gewoon fijner uitziet.",
-		
-		"headerImg": "assets/img/hedon-header.jpg",
-		"imgLeft": ["assets/img/img-1.jpg", 
-					"assets/img/img-2.jpg"],
+		"learned": "Met het ontwikkelen van de stijl heb ik gewerkt met SASS, wat toen nieuw was voor mij. Ik heb hier dus veel in kunnen oefenen. Ook heb ik weer nieuwe dingen geleerd voor bepaalde oplossingen als het gaat om pure CSS. Voorbeelden zijn het gebruiken van pseudo-elementen op andere manieren gebruiken en met verschillende positions in combinatie werken. Ik heb ook geleerd nog kritischer te kijken naar de functionaliteit. Oplettend of het werkt op alle browsers en toestellen. Bij dit soort grote websites kunnen dus ook verborgen dingen zijn zoals validatie of andere dingen die je eventueel zou kunnen vergeten. Daar let ik nu beter op dan voorafgaand van dit project.",
+		"projectLink": "https://www.hedon-zwolle.nl",
+
+		"headerImg": "assets/img/hedon/hedon-header.jpg",
+		"imgLeft": [
+			{
+				"img": "assets/img/hedon/hedon-homepage.png",
+				"description": "Hedon bestelproces - De homepage van Hedon"
+			}
+		],
+		"imgRight": [
+			{
+				"img": "assets/img/hedon/bp-before.png",
+				"description": "Hedon bestelproces - Screenshot voordat de stijl was toegevoegd"
+			},
+			{
+				"img": "assets/img/hedon/bp-after.png",
+				"description": "Hedon bestelproces - Screenshot nadat de stijl was toegevoegd"
+			}
+		],
 		
 		"nextLink": "/realisaties/100-100-100",
 		"nextName": "100-100-100"
@@ -16,8 +32,32 @@
 		"link": "100-100-100",
 		"name":"100-100-100",
 		"intro": "100-100-100 is een project van Boerdam samen met ROVA (afvalverwerkingsbedrijf). 100-100-100 staat voor 100 huishoudens, 100 dagen, 100% afvalvrij. Het is een project met de uitdaging voor huishoudens om 100 dagen afvalvrij te leven. Dit lukt door goed producten niet zomaar weg te gooien en na te denken bij de aankoop van producten. 100-100-100 biedt een online platform waar deelnemers wekelijks een opdracht doen die hen helpt in de uitdaging tot een afvalvrij leven. Het restafval dat zij nog overhouden vullen zij in op de afvalmeter op de website. Uit eerdere resultaten blijkt dat deelnemers van 100-100-100 ver onder het landelijke gemiddelde blijven. Soms tot bijna 90% minder kg restafval per persoon per jaar. Gemeentes kunnen deelnemen om hun eigen editie te starten.",
+		"process": "Het project 100-100-100 is begonnen in januari 2015 en in eind 2016 waren er al 100 deelnemende gemeentes. Het is technisch dusdanig opgezet, dat je alleen de lettertypes, kleuren, logo’s en de headerfoto hoeft aan te passen. Zo hebben gemeentes een hele mooie website in hun eigen stijl zonder dat er een hele nieuwe site vanaf scratch voor gebouwd hoeft te worden. Ook wordt er een mail template ontworpen naar de stijl van de gemeente. Als er een nieuwe editie gemaakt moet worden voor een nieuwe gemeente, dan gaan we aan de hand van een soort protocol aan de slag. De back-end ontwikkelaar(s) zetten het nieuwe thema klaar en de front-end ontwikkelaar(s) maken een ontwerp in Sketch voor die gemeente. Daarna wordt het klaargezette thema bijgewerkt tot de online editie gelijk is aan het ontwerp. Zelf heb ik de thema’s ontworpen voor de gemeentes Bernheze, Echt-Susteren, Hulst en Vlaardingen. Bij het ontwerp verander je de kleuren, lettertypes en het logo. De kleuren en lettertypes baseer je op de website van de gemeente. Het logo en de header foto worden door de gemeente aangeleverd.  Je maakt ook app-icoontjes met de kleur van de gemeente die je gebruikt voor het zogenaamde Manifest-bestand. Dit Manifest-bestand is gemaakt zodat je jouw web app een ‘Progressive web app’ kan maken. Een Progressive web app is een manier om de beleving van de gebruiker te verbeteren. Dit lukt door de webapplicatie toch te kunnen laden als er geen internet beschikbaar is (als je hem minstens 1 keer van tevoren bezocht hebt), door de web applicatie sneller te laden en door de web applicatie op je ‘home screen’ van je mobiel te kunnen plaatsen met een icoontje zoals alle andere apps. De data van de website wordt door C# (back-end codetaal) ingeladen. Dit betekent dat ik als front-end ontwikkelaar niet aan de HTML hoef te zitten. Het enige wat er in de code veranderd moest worden, was de CSS. Ik moest de CSS kopiëren van een ander thema en het bestand veranderen van naam. Dan kon ik dat bestand aanpassen zodat het thema exact overeenkomt met het ontwerp dat ik daarbij gemaakt heb. De kleuren en lettertypes staan in SASS-variabelen. Dat houdt in dat ik alleen de waarde van de variabel hoefde te veranderen en dan veranderde dat overal. De primaire en secundaire kleuren hoefden maar met 1 regel gewijzigd te worden. Natuurlijk waren er wel uitzonderingen waardoor je kleuren soms toch handmatig moet veranderen.",
+		"learned": "Bij het maken van het ontwerp moest ik kritisch kijken naar de huisstijl van de gemeente. Soms ging dat goed, maar soms moest ik het ook anders doen. Dit heeft mij geholpen om beter ideeën en bedoelingen achter bepaalde stijlen te herkennen. Dit was de eerste keer dat ik in een groot project werk waar meerdere sites en heel veel data in bijeenkomen. Hier heb ik geleerd hoe een groot project wordt ingedeeld en in elkaar zit. Ook heb ik hier weer met SASS gewerkt, maar op een andere manier waardoor ik er veel van heb kunnen leren.",
+		"projectLink": "https://www.100-100-100.nl",
 
 		"headerImg": "assets/img/100-100-100-header.jpg",
+
+		"imgLeft": [
+			{
+				"img": "assets/img/100-100-100/100-100-100-homepage.png",
+				"description": "100-100-100 - De homepage van 100-100-100"
+			},
+			{
+				"img": "assets/img/100-100-100/editie-1.png",
+				"description": "100-100-100 - Een screenshot van editie Echt-Susteren"
+			}
+		],
+		"imgRight": [
+			{
+				"img": "assets/img/100-100-100/editie-2.png",
+				"description": "100-100-100 - Een screenshot van editie Vlaardingen"
+			},
+			{
+				"img": "assets/img/100-100-100/editie-3.png",
+				"description": "100-100-100 - Een screenshot van editie Bernheze"
+			}
+		],
 		
 		"nextLink": "/realisaties/bfo",
 		"nextName": "Bevrijdingsfestival Overijssel"
@@ -25,9 +65,37 @@
 	{
 		"link": "bfo",
 		"name":"Bevrijdingsfestival Overijssel",
-		"description": "lekker projectje",
+		"intro": "lBevrijdingsfestival Overijssel is het grootste bevrijdingsfestival van Nederland. Boerdam zorgt al sinds 6 jaar voor een livestream op het platform van Jij & Overijssel, het publieksplatform van de provincie Overijssel. Ook wordt er op 5 mei een liveblog bijgehouden, met behulp van studenten van Landstede fotografie en redactie. Het bevrijdingsfestival had in 2016 erg veel kijkers getrokken. 3,9 miljoen mensen hebben het toen op televisie gezien, 65 duizend online (op Jij & Overijssel) en er waren 140 duizend mensen op het festival zelf. Ik heb mij met meerdere taken mogen bezig houden in de aanloop naar 5 mei 2017 en op de dag zelf achter de schermen.",
+		"process": "Ruim 2 weken voor dat het bevrijdingsfestival was, begonnen wij al met het voorbereiden. De studenten van de AV-productie (film) werden uitgenodigd voor een kick-off waar ze klaargestoomd werden voor 5 mei. De uitnodiging was in de vorm van een e-mail die ik gemaakt heb in de stijl van het nationale bevrijdingsfestival. Daarna voor de kick-off zelf heb ik op de bestaande plattegrond uitgebeeld waar de camera’s staan, waar welke school staat en waar de regiewagen staat. Hier heb ik zelf iconen ontworpen in Adobe Illustrator die goed passen in de stijl van de plattegrond, maar die vooral makkelijk te begrijpen en te herkennen zijn. Voor de livestream en de grote schermen naast het hoofdpodium zijn namen zichtbaar van de artiesten en de mensen die gesponsord hebben. In de voorgaande jaren werd dit gedaan door een video met de namen en een transparante achtergrond over de live beelden te zetten. Functioneel werkte dat goed, maar soms moest er iets op de dag zelf iets gewijzigd worden in de video en dan moest er lang gewacht worden op video tot hij gerenderd was. Dit wouden wij dit jaar voor zijn door er een transparante webapplicatie met de namen overheen te leggen. De back-end ontwikkelaar hee  iets gemaakt waardoor je makkelijk namen kon verwijderen en toevoegen door een tekstveld aan te passen en door opslaan te drukken. Ook kon je de animatie handmatig aan en uit zetten. Het moest er alleen wel weer zo uit komen te zien als de video die ervoor gebruikt werd. Hier heb ik in CSS, doormiddel van keyframes, de animaties exact nagemaakt. CSS- animaties zijn licht en snel (60fps). Iedereen die de livestream bekeek en die voor het hoofdpodium naar het grote scherm keken, konden de door mij gecodeerde animatie zien. In de voorbereiding heb ik ook verschillende templates gemaakt die gebruikt konden worden voor social media en de liveblog op het Jij & Overijssel platform (onder de livestream). Bij de liveblog en social media is het belangrijk dat de foto spreekt. De foto was dus het belangrijkste en er was ruimte voor een ‘one-liner’ die een korte en krachtige beschrijving of toevoeging gaf. De templates heb ik dusdanig gemaakt, dat de foto er alleen maar ingeplakt hoe  te worden en de tekst ingevuld hoe  te worden. Je hebt dan in heel weinig tijd een foto in de stijl van het bevrijdingsfestival en Jij & Overijssel die je zo op social media of op de liveblog kon delen. Op de dag zelf zaten we in een tent met de mensen van media. Hierin zaten studenten die voor foto’s en content voor de liveblog zorgden, een klein team van De Stentor die fragmenten aan het monteren waren en wij van Boerdam die met de livestream, social media en de liveblog bezig waren. Ik heb de op 5 mei meegeholpen met het Twitteren namens Jij & Overijssel. Deze Tweets waren klaargezet in de voorbereiding en ik heb ze in de ochtend nog goed gecontroleerd en tijd was heb ik de Tweets verzonden (bijvoorbeeld een aankondiging van een artiest wanneer hij/zij het podium op kwam). Daarnaast heb ik de studenten van fotografie en redactie geholpen met het bewerken van foto’s en heb ik deze verwerkt in het template die ik in de voorbereiding ontworpen en klaargezet heb. Het was een bijzondere ervaring om mee te mogen helpen met een enorm evenement als dit. De dag verliep goed en ik vond het leuk om te zien wie wat deed en hoe het er aan toe ging.",
+		"learned": "Ik heb nooit echt geweten hoe het er achter de schermen aan toe gaat bij grote evenementen als dit. Op 5 mei heb ik de hele dag achter de schermen gelopen en heb ik bijvoorbeeld gezien hoe er in het begin opgebouwd werd en hoe het er in de regiewagen aan toe gaat voor de live-beelden. Tijdens het festival ben ik er ook achter gekomen hoe belangrijk het is om goed voor te bereiden. Alles wat voorbereid kon worden, was voorbereid en we hoefden ons bijna nergens zorgen over te maken tijdens het festival. Er gebeurden wel dingen die dag waar we op dat moment mee bezig waren, maar die kon je niet voorbereiden. De rest was allemaal zo goed als af en daardoor konden we ook volop genieten van het festival.",
+		"projectLink": "https://www.jijenoverijssel.nl/bfo",
 
-		"headerImg": "assets/img/bfo-header.jpg",
+		"headerImg": "assets/img/bfo/bfo-header.jpg",
+
+		"imgLeft": [
+			{
+				"img": "assets/img/bfo/bfo-kickoff.jpg",
+				"description": "BFO 2017 - De kick-off van de studenten van de opleiding AV-productie"
+			},
+			{
+				"img": "assets/img/bfo/bfo-regie.jpg",
+				"description": "BFO 2017 - Binnen de regiewagen met op het witte scherm de animatie voor de sponsornamen"
+			},
+			{
+				"img": "assets/img/bfo/bfo-screen.jpg",
+				"description": "BFO 2017 - Blaudzun op het podium en daarnaast het scherm met de livebeelden en de sponsornamen"
+			}
+		],
+		"imgRight": [
+			{
+				"img": "assets/img/bfo/bfo-artiest.png",
+				"description": "BFO 2017 - Artiest Blaudzun in het BFO/Jij & Overijssel template voor Twitter"
+			},
+			{
+				"img": "assets/img/bfo/bfo-template.png",
+				"description": "BFO 2017 - Een live-blog post in het template"
+			}
+		],
 
 		"nextLink": "/concepten",
 		"nextName": "concepten"
@@ -35,9 +103,28 @@
 	{
 		"link": "voerdam",
 		"name":"Voerdam",
-		"description": "nog een lekker projectje",
+		"intro": "Iedere vrijdagmiddag gaan we met de mensen die dan werken lekker en vooral ongezond eten. We geven dan een bestelling door via Slack op het eet-kanaal en als alle bestellingen doorgeven zijn, dan gaat een stagiair het eten halen. Later vraagt de stagiair aan de mensen of ze het willen terugbetalen op Slack. Het werkt niet echt handig op deze manier, omdat je niet weet waar je gaat eten en omdat het onoverzichtelijk is. Slack is er niet op gemaakt om bestellingen op te nemen. Daarom leek het een goed plan er een eigen webapplicatie voor te maken: Voerdam. Het is perfect voor ons als stagiaires om zo iets te maken van de dingen die we tot zover geleerd hebben en te oefenen. Het is natuurlijk iets extra’s, dus projecten voor klanten gaan altijd voor. Het is een goede tijdsbesteding als we tijd over hebben, bijvoorbeeld wanneer er geen front-end opdrachten meer in de sprint staan.",
+		"process": "De stagiair-groep bestaat uit Ed, Fabio en ik. We zijn het project gestart met Thomas die met hee  gekeken hoe we het project juist gaan aanpakken. We wilden beginnen met een versie 1, wat inhoud dat we alleen de basis in de app zullen verwerken in eerste instantie. Zo kunnen we, als we tijd over hebben, de app altijd verder uitbreiden tot een volgende versie. We bedenken wel alvast wat andere ideeën, maar die gaan we pas toevoegen als de basis klaar is. Op deze manier werken, wordt ook wel ‘agile’ genoemd. Flexibel, omdat je er altijd alle kanten mee op kan gaan, zonder dat het de basis verliest. We begonnen ons te focussen op de stijl die we willen gebruiken en het functionele ontwerp (de wireframes). We spraken met Thomas af dat we na de sprint een ontwerp klaar zouden hebben staan. Dit bleek achteraf tegen te vallen want we hadden niet meer dan een onderzoek en een beginsel van een styleguide, dus verschoven we het 2 weken. 2 weken later hadden we nog steeds geen definitief ontwerp, maar wel wireframes en had ik een uitgebreide styleguide afgemaakt. We kregen hier wel enthousiaste reacties over, dus het moest wel goed komen. Toen ik en Fabio de schermontwerpen gingen maken, gingen we allebei een andere kant op. Ik bleef strak volgens mijn eigen styleguide een ontwerp maken en Fabio ging deels vanuit mijn styleguide en deels eigen inbreng een ontwerp maken. Beide ontwerpen leken goed, maar zowel ik als Fabio wouden met onze eigen ontwerp verder en niet met die van de ander. 2 weken later hadden we 2 ontwerpen die grotendeels uitgewerkt waren, maar flink van elkaar verschilden. Tijdens de review van de sprint hebben we het besproken en zijn we er uitgekomen dat we het beste opnieuw kunnen beginnen en samen aan het ontwerp gaan zitten in plaats dat we beide voor zichzelf een ontwerp gaan maken. Dit keer gingen we weer opnieuw samen onderzoek doen om erachter te komen wat we voor ons zien als het juiste ontwerp voor deze app. We maken samen keuzes wat we wel en niet meenemen en gaan zo samen tot een ontwerp komen. Ook dit keer heb ik de styleguide gemaakt, maar telkens gevraagd wat Fabio er van vond voordat ik er mee verder ging. Ook heb ik zo gebruik kunnen maken van zijn feedback. Nog steeds haalden we de afspraak niet om na de 2 weken een eindproduct af te hebben, maar dat komt vooral omdat het niet in te schatten is hoeveel tijd je over hebt in die 2 weken om er mee bezig te gaan. We moeten het immers doen met de tijd die we over hadden. Toen ik de styleguide af had en toen Fabio en ik samen de ontwerpen af hadden gemaakt, was Ed zijn stageperiode alweer voorbij. Mede daardoor en door gebrek aan tijd, zijn Fabio en ik niet meer verder gegaan dan het ontwerpen van ons project. Toch is het concept mooi geworden en waren de collega’s positief over het ontwerp. Bij het maken van de styleguides heb ik gelet op de huidige trends in webdesign en naar het doel van de app. Het doel is dat gebruikers makkelijk eten kunnen bestellen en dat het duidelijk en overzichtelijk is waar er gegeten wordt, wat er te eten valt en wat jij en anderen besteld hebben. Het is dus niet de bedoeling om een druk en gek ontwerp te maken, maar een strak en overzichtelijk ontwerp. De kleuren vond ik erg belangrijk, omdat de app wel het gevoel moet geven dat het om eten gaat. Bij de kleur blauw is dat bijvoorbeeld niet snel het geval ondanks de andere stagiaires dat wel een mooie kleur vonden voor de app. Blauw wordt veel gebruikt bij websites en kan er mooi en fris uitzien, maar werkt niet als kleur voor een app die gerelateerd is aan eten. Verder heb ik gebruik gemaakt van icoontjes voor de sfeer en heb ik gebruik gemaakt van schaduw, wat ervoor kan zorgen dat het witte vlak van ‘mijn bestelling’ op een bonnetje lijkt. In de user interface heb ik 2 soorten knoppen ontworpen, namelijk een knop die veel opvalt en een knop die minder opvalt. Zo hou je een eenduidige stijl en kun je de gebruiker sturen door de belangrijkste knop als enige opvallend te maken.",
+		"learned": "Fabio en ik hadden allebei een andere manier van werken geleerd op school. De aanpak bij Boerdam is ook weer anders dan de manier zoals wij het van school geleerd hebben. We hebben in het begin goed overlegd wie wat gaat doen, wat allemaal goed leek te gaan. Verder in het proces zijn we eigenlijk steeds minder gaan communiceren en zijn we onbewust iets gaan maken waar we het uiteindelijk niet over eens zullen zijn. Tijdens de review hebben we met zijn alle besproken wat er niet goed ging en hoe we op de juiste manier verder moeten. Daar kwam uit dat we meer moesten communiceren, wat daarna ook goed ging. Ik heb hier dus beter van leren communiceren en ik heb geleerd wat er kan gebeuren wanneer je niet goed communiceert.",
 
-		"headerImg": "assets/img/voerdam-header.jpg",
+		"headerImg": "assets/img/voerdam/voerdam-header.jpg",
+
+		"imgLeft": [
+			{
+				"img": "assets/img/voerdam/style-old.jpg",
+				"description": "Voerdam - de 1ste styleguide"
+			}	
+		],
+		"imgRight": [
+			{
+				"img": "assets/img/voerdam/screen-1.jpg",
+				"description": "Voerdam - het ‘kies een restaurant’ scherm van de 2de versie"
+			},
+			{
+				"img": "assets/img/voerdam/screen-2.jpg",
+				"description": "Voerdam - het ‘bestel' scherm van de 2de versie"
+			}
+		],
 
 		"nextLink": "/concepten/jij-en-overijssel",
 		"nextName": "Jij & Overijssel"
@@ -45,9 +132,25 @@
 	{
 		"link": "jij-en-overijssel",
 		"name":"Jij & Overijssel",
-		"description": "lekker projectje",
+		"intro": "JIJ en Overijssel draait om jij als inwoner van de provincie Overijssel. Er is een online platform gemaakt doorBoerdam waar mensen zelf initiatieven en ideeën kunnen delen om de provincie Overijssel mooier en beter te maken (jijenoverijssel.nl). De initiatieven die op jijenoverijssel.nl gedeeld zijn, kunnen door de andere bezoekers worden ondersteund en gedeeld. De initiatieven zijn geordend op basis van energie. Hoe meer energie, hoe hoger het initiatief in beeld komt. Een initiatief krijgt energie wanneer er een reactie wordt toegevoegd, als het initiatief gedeeld, bekeken of ge-‘love-it’ wordt of als mensen zich via een knop aansluiten bij het initiatief. Buiten de initiatieven op het platform, zijn er ook de livestreams van het bevrijdingsfestival van Overijssel en van Ribs & Blues op het platform te zien. Het platform is gemaakt op 2014 en de stijl begint al een beetje te verouderen in vergelijking met de huidige trends. Ook wanneer je als nieuwe gebruiker op de site zou komen, was lastig te zien waar de site om draait. Mij werd gevraagd of ik het ontwerp van de home-pagina en de detail-pagina wou herzien.",
+		"process": "Ik kon hiermee aan de slag, maar het had geen hoge prioriteit. De andere backlog items in de sprint hadden voorrang en als ik tijd over had, dan kon ik hier mooi mee bezig. In de eerste 2 weken had ik onderzoek gedaan naar websites die een vergelijkbaar concept hebben. Hieruit resulteerde dat de websites die duidelijker en overzichtelijk waren, het meest gewaardeerde artikel nog meer accentueerde. Ook stond er gelijk wat het is en zag je gelijk waarom die bovenaan stond. Verder had het overzicht van alle artikels meer witruimte en was er meer ruimte voor de eventuele extra informatie. Met deze informatie ben ik een eerste concept van de home-pagina gaan ontwerpen met het bestaande ontwerp. Als eerste ben ik bezig geweest met het uitlichten van het initiatief met de hoogst energie-waarde. 17 Daarbij heb ik de blokken meer ruimte gegeven en heb ik de sorteerbalk herzien, omdat deze knoppen bevatte die niet veel gebruikt zouden worden. Toen ik dit heb laten zien aan de project leider, vertelde hij mij dat het ontwerp nog te veel op het vorige ontwerp leek. Dit ontwerp zag er al wel beter uit dan het originele ontwerp en de nieuwe dingen mochten ook zeker terugkomen. Toch mocht het best meer afwijken van originele ontwerp. Ook mistte er nog een ontwerp voor de livestream (of iets anders) in de header en mocht het sorteren misschien wel helemaal weg en daarvoor in de plaats verschillende lijstjes van initiatieven waar initiatieven anders zijn gesorteerd (bijvoorbeeld meest energie en daarna meest recent). Dit allemaal kwam er op neer dat ik beter het ontwerp volledig vanuit een blank document opnieuw kan schetsen in plaats van het huidige ontwerp helemaal los te trekken. Wel kon ik de aanpassingen erbij houden die ik goed kon gebruiken voor de nieuwe schetsen. Helaas begon op dit moment het einde van de stage wel te naderen en had ik erg weinig tijd over om er nog een compleet nieuw ontwerp helemaal uit te werken.",
+		"learned": "Het eerste concept leek te veel op het originele ontwerp en een week voordat ik deze af heb was mij nog na de tussentijdse beoordeling verteld dat ik wel wat losser en eigenwijzer mocht zijn als ontwerper. Hieruit bleek dus dat ik mij daar nog goed in kon verbeteren. Normaal gesproken had ik dat niet helemaal van mezelf door en ik heb mezelf eigenlijk beter leren kennen hierdoor. Vanaf dit moment zal ik beter gaan nadenken over oplossingen die je misschien niet 1-2-3 zal bedenken. Ook zal ik mezelf proberen aan te leren wat creatiever te denken en eigenwijzer te worden. De project leider keek op een hele andere manier naar het ontwerp dan ik. Ik keek te veel naar waar het puur ontwerptechnisch beter kon, terwijl de project leider meer als de bezoeker naar de site keek. Hierdoor kwam hij bij hele andere verbeterpunten waar ik helemaal niet aan gedacht had. Ontwerptechnisch kijken is niet verkeerd, want daardoor vallen mij dingen op die kunnen storen zonder dat het opvalt. Het is echter wel belangrijk dat je ook als een bezoeker van de site naar de site gaat kijken om erachter te komen of het wel gebruiksvriendelijk is. Hier heb ik dus van geleerd om ook op een andere manier naar een website te kijken.",
+		"projectLink": "https://www.jijenoverijssel.nl",
 
-		"headerImg": "assets/img/jij-en-overijssel-header.jpg",
+		"headerImg": "assets/img/jij/jij-header.jpg",
+
+		"imgLeft": [
+			{
+				"img": "assets/img/jij/jij-screen.jpg",
+				"description": "Jij & Overijssel - de huidige homepagina"
+			}
+		],
+		"imgRight": [
+			{
+				"img": "assets/img/jij/jij-wireframe.jpg",
+				"description": "Jij & Overijssel - de wireframe voor het re-design van de homepagina"
+			}
+		],
 
 		"nextLink": "/concepten/schone-ijsseloevers",
 		"nextName": "Schone IJsseloevers"
@@ -55,9 +158,33 @@
 	{
 		"link": "schone-ijsseloevers",
 		"name":"Schone IJsseloevers",
-		"description": "nog een lekker projectje",
+		"intro": "Schone IJsseloevers is een initiatief van ROVA, Circulus Berkel, waterschap Drents Overijsselse Delta, provincie Overijssel en Rijkswaterstaat - Ministerie van Infrastructuur en Milieu. Met dit initiatief willen de samenwerkende organisaties/bedrijven zwerfafval tegen gaan in en rond het IJssel. Wij bij Boerdam kregen de opdracht om na te gaan denken om dit te bereiken doormiddel van een digitaal concept of misschien wel iets anders, wat helemaal aan ons was. Om het concept daadwerkelijk zwerfafval tegen te laten gaan, gingen we ons richten op de bewustwording van de inwoners rond de IJssel. Ook wouden we inwoners zelf laten nadenken over een bepaalde oplossing om zwerfafval tegen te gaan, door ze ideeën te laten op sturen. De winnaar van het beste idee krijgt een beloning van €5000,- om het idee uit te werken.",
+		"process": "Toen Christiaan, Ivo en Elsbeth gebrainstormd hebben over welke doelen gesteld moesten worden en met welke oplossingen ze gehaald konden worden. Uit de brainstormsessie zijn 5 ideeën gekomen; ‘volg de PETfles’, ‘het toekomstbeeld’, ‘voor-en-na beeld’, ‘locaties uploaden’ en ‘de lifecycle’. Ik kreeg samen met Fabio de opdracht om de ideeën uit te beelden in moodboards als presentatie. ‘Volg de PET-fles’ was het meest originele en spannende idee. Het idee was namelijk om zelf een plastic fles (PET-fles) het water in te gooien met daarin een camera (bijv. een GoPro) die doormiddel van een live-video of een time-lapse beelden van de het afval in en rond de IJssel naar jijenoverijssel.nl stuurt. Zo kun je dus in een livestream laten zien wat er in de IJssel ligt en waar je afval naartoe gaat. Als we er ook een GPS in zouden doen, dan konden we via een soort Google Maps bijhouden en laten zien waar de fles is begonnen en waar het naartoe gestroomd is. De beelden zouden ook goed gebruikt kunnen worden voor Social Media om te delen. ‘Het toekomstbeeld’ is een idee om snel en duidelijk te laten zien wat de consequenties en resultaten zijn als we zo door blijven gaan met afval van ons afgooien. Zo zouden we dus een applicatie kunnen maken waar je een foto ziet hoe de IJssel er nu uitziet en via een slider een foto kunt zien hoe die exact zelfde foto er over 5 jaar uit zou zien, met heel veel afval. Dit zou een schokkend beeld kunnen zijn die mensen aan het denken zet en vooral tot actie zet. ‘Het voor-en-na beeld’ lijkt een beetje op ‘het toekomstbeeld’, gaat het over een kortere periode wat meer herkenbaar overkomt. In het moodboard was een herkenbaar strand te zien die er in de ochtend schoon uitzag. 19 Toen kwam een beeld waar veel mensen op het strand zijn die natuurlijk dingen meenemen die tot afval kunnen lijden (denk bijvoorbeeld aan verpakkingen van etenswaren). In het laatste beeld was te zien wat een enorme hoeveelheid aan afval er na 1 dag op het strand overblij!. Dit zou misschien minder schokkend lijken dan ‘het toekomstbeeld’, omdat het verschil op kleinere schaal is. Het is daarentegen meer herkenbaar, omdat je het op de dag dat je zelf op het strand loopt zelf ziet gebeuren. ‘Het voor-en-na beeld’ kan ervoor zorgen dat je er ook daadwerkelijk bij stil gaat staan. ‘Locaties uploaden’ houdt in dat mensen locaties kunnen uploaden waar al veel afval ligt. Zo heb je een soort Social Media-platform dat vergelijkbaar is met Instagram, alleen zijn de foto’s gericht op afval. Ook is er een overzicht (bijvoorbeeld Google Maps) waar je kan zien waar de foto’s geüpload zijn. Als er meerdere locaties geüpload zijn en er steeds meer komen, dan zul je erachter komen hoe erg de situatie op dit moment al is. ‘De lifecycle’ laat zien wat er met het zwerfafval gebeurt dat in de IJssel terechtkomt. Afval (met name plastic) kan terugkomen in de producten die je gebruikt of consumeert. Veel afval wat in water terecht komt, komt uiteindelijk terecht in de ‘Plastic Soup’. Een bekende term voor veel mensen, maar ver van ons. Om mensen toch het gevoel te geven dat het dichtbij is, laten we zien hoe afval van de ‘Plastic Soup’ terugkomt in op je bord of in andere producten. De moodboards zijn gepresenteerd aan de klant en ik heb de moodboards met Fabio gepresenteerd tijdens de review binnen Boerdam. Iedereen hee! kritisch gekeken naar de concepten en we zijn er op uitgekomen dat we door gaan zetten met de PET-tracker en de lifecycle. Nu gaan we dus een stap verder dan de moodboards. Beginnend bij PET-tracker zijn we onderzoek gaan doen naar hoe we dit tot een realistisch uitvoerbaar product kunnen uitwerken. We hebben eerst een brainstormsessie met de mensen van front-end, de back-end developer, degene die gaat over de content en de projectleider gedaan. Daar kwam uit dat de PET-fles zelf lastig wordt om hiervoor te gebruiken, dus kunnen we beter een boei gebruiken. Ook was connectie met internet een potentieel probleem. Daarna kwam ook dat de batterij lang mee moest kunnen. Na ideeën te hebben opgedaan zijn Fabio en ik dat verder gaan uitzoeken. Hier hebben we de werking en benodigdheden uitgebeeld zodat het makkelijk en duidelijk te presenteren was. De lifecycle heb ik vanaf hier opgepakt. Als eerste ben ik gaan kijken wat de lifecycle inhoudelijk in zal houden. Welke stappen komen er in de lifecycle? Hoeveel stappen komen er in de lifecycle? Dit was belangrijk om te weten voordat ik zou beginnen met de vormgeving, omdat het daar invloed op hee!. 20 Tijdens het uitzoeken van deze stappen ben ik erachter gekomen dat afval van de IJssel met de stroming naar de oceaan gaat. Afval dat in de oceaan ligt komt weer bij elkaar vanwege de cirkelende stroming van de oceaan. Dit is dus de ‘Plastic Soup’. De Plastic Soup zorgt ervoor dat vis plastic en ander afval gaat eten. De vis die dus uit de oceaan gevist en verkocht wordt, bevat dan plastic en ander afval. Zo kan dit afval zomaar op je bord komen wanneer je bij een restaurant of ergens anders vis haalt om te eten. Zo gooi je afval weg en zo komt het weer op je bord. Dit was al een bekende situatie voor de meeste mensen, maar tijdens het onderzoek ben ik er ook achter gekomen dat de ‘Plastic Soup’ met andere consequenties ook terug kan komen. Dit ben ik helemaal gaan uitzoeken en ik heb uiteindelijk 4 verschillende ‘lifecycles’ van het afval gevonden. Nu ik dit weet kan ik weer op een andere naar de vorm kijken. Ik ben hierna dus bezig gegaan met de vormgeving. Belangrijk hiervoor was dat de foto van het dorp waar de bezoeker vandaan komt, goed in beeld komt. Dit is voor het gevoel dat het bij gebruiker zijn omgeving gebeurt en ook en uiteindelijk echt bij de gebruiker terugkomt. Ook vond ik het belangrijk dat er altijd een vorm van een cirkel in beeld blij! om de gebruiker te laten weten dat het verhaal op dezelfde plek eindigt als waar het begint. Met deze punten ben ik op het concept gekomen waar in het midden de stap beschreven staat van waar je je bevindt in het verhaal met daaromheen een cirkel met daarin de stappen uitgebeeld en op de achtergrond een bijbehorende foto van de stap. Dit was nog maar een concept en nog niet de perfecte uitwerking als eindproduct. Nadat dit gepresenteerd was bij de klant, hebben we positieve feedback gekregen en konden we dit concept gaan uitwerken tot een werkend prototype die gebruikt kon worden tijdens de Hanzedagen in Kampen. Hiervoor heb ik met de Berry (front-end ontwikkelaar/ontwerper die als freelancer toen nieuw is komen werken) het ontwerp onder de loep genomen. Lettend op gebruiksvriendelijkheid en gebruikerservaring. Hierna hebben we nagedacht over de interactiviteit, die de lifecycle dynamisch moet maken. Ik heb hier de cirkel waar de stappen in staan uitgedacht. Deze moest ervoor zorgen dat de gebruiker duidelijk kan zien dat de stippen die in de cirkel staan de stappen weergeven. Dat betekent dat het belangrijk is dat je aan de cirkel kan zien waar je bent en dat je verder gaat in het verhaal wanneer je naar de volgende stap gaat. Ook leek het eerste concept wat te plat, dus heb ik er 3 draaiende cirkels op de achtergrond toegevoegd die voor diepte en een dynamisch uiterlijk zorgen. Toen dit uitgedacht was, zijn we samen bezig geweest met het ontwikkelen van de lifecycle. Omdat Berry nieuw was bij Boerdam maar wel veel ervaring hee!, vroeg hij of ik met hem meeging kijken hoe hij te werk gaat. Zo zullen we niet op een andere werkwijze aan hetzelfde project werken. Hij codeerde grotendeels en ik heb gekeken of alles nog wel klopte zoals het ontwikkeld werd. Ook Berry moet soms even nadenken hoe je dingen het best aan kan pakken en daar heb mijn visie gedeeld waar hij soms wel wat mee kon. 21 Uiteindelijk waren we net op tijd klaar met de het prototype voordat Christiaan hem ging presenteren. Het prototype was alleen nog erg zwaar om te draaien voor een normale laptop en was te zwaar om te draaien op de iPad. Dit hebben we een aantal dagen nog kunnen oplossen door het te optimaliseren. Het prototype hadden we erg ver afgewerkt, waardoor er misschien wel te veel moeite ingestoken hadden. Een prototype was in dit geval zo goed als een eindproduct. Dit komt achteraf gezien, omdat we niemand echt scherp had wat de minimale en maximale eis was voor dit prototype. Ondanks dat hebben we wel een mooi product neergezet die door iedereen gewaardeerd werd en goed te gebruiken was voor de Hanzedagen.",
+		"learned": "Dit was het eerste project die ik van idee tot uitgewerkt concept heb zie komen tijdens mijn stageperiode en ik was zelf degene die zich er het meest mee mocht bemoeien. Ik heb dus geleerd welke stappen er worden gemaakt om van een idee tot een concept te komen. Ook heb ik sommige momenten gehad dat ik te diep in de details ging zoeken terwijl het op dat moment nog ging om het concept over het algemeen. Dat betekent dat ik stil moet staan bij wat belangrijk is om uit te zoeken en wat eventueel voor later is. Tijdens de samenwerking met Berry, heb ik meegekeken met hoe hij zijn bestanden en zijn geschreven code altijd overzichtelijk houdt.",
+		"projectLink": "http://lifecycle.schoneijsseloevers.nl",
 
-		"headerImg": "assets/img/schone-ijsseloevers-header.jpg",
+		"headerImg": "assets/img/ijssel/ijssel-header.png",
+		
+		"imgLeft": [
+			{
+				"img": "assets/img/ijssel/homepage.jpg",
+				"description": "Schone IJsseloevers - een screenshot van de homepagina"
+			},
+			{
+				"img": "assets/img/ijssel/steps.jpg",
+				"description": "Schone IJsseloevers - de stappen na het onderzoeken van de lifecycle van het afval dat in het water terecht komt"
+			}
+		],
+		"imgRight": [
+			{
+				"img": "assets/img/ijssel/concept-first.jpg",
+				"description": "Schone IJsseloevers - het eerste concept van de lifecycle"
+			},
+			{
+				"img": "assets/img/ijssel/ijsseloevers.jpg",
+				"description": "Schone IJsseloevers - het uiteindelijke concept van de lifecycle"
+			}
+		],
 
 		"nextLink": "/conclusie",
 		"nextName": "conclusie"

@@ -1,8 +1,8 @@
-figure img {
-    animation: fadeIn forwards .4s ease-in 1.5s;
+.img-figure .fade-in {
+    animation: fadeInImg forwards .4s ease-in 1.5s;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInImg {
     from {opacity: 0;}
     to {opacity: 1;}
 }

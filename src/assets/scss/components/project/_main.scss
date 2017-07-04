@@ -16,7 +16,12 @@
     }
 
     p {
-        font-size: $font-md;
         margin-bottom: 60px;
+    }
+
+    .project-link {
+        font-family: $font-light;
+        color: $color-primary;
+        text-decoration: underline;
     }
 }

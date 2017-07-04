@@ -6,7 +6,10 @@
     Concepten
   </h1>
   <h1 *ngSwitchDefault></h1>
-  </div>
+  <article *ngSwitchCase="'realisaties'">Als interactief mediavormgever moet ik opdrachten goed volgens de eisen kunnen uitvoeren. Tijdens mijn stage krijg ik veel opdrachten waarin ik kan laten zien dat ik de opdrachten kan uitvoeren volgens de verwachting van de opdrachtgever. In dit verslag vertel ik over 3 van deze opdrachten die ik uitgevoerd heb.</article>
+  <article *ngSwitchCase="'concepten'">Voordat er een idee tot een eindproduct ontwikkeld is, moet er eerst een concept bedacht en uitgewerkt worden. Soms moet er echt vanuit een idee iets bedacht worden en soms moet er concept bedacht worden om een bestaand product te verbeteren of te herzien. Tijdens mijn stage heb ik hier een aantal opdrachten van uitgevoerd. In dit hoofdstuk beschrijf ik het proces en bepaalde keuzes van 3 door mij gemaakte concepten zal beschrijven.</article>  
+  <article *ngSwitchDefault></article>
+</div>
 <router-outlet></router-outlet>
 
 <app-footer [nextLink]="nextLink" [ngClass]="{'invisible': notVisible === true}"></app-footer>
